@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владислав Дурин](https://up.htmlacademy.ru/adaptive/8/user/113967).
-* Наставник: [Владимир Цибизов]
+* Наставник: [Владимир Цибизов] (https://htmlacademy.ru/profile/vlad_blow).
 
 ---
 
