@@ -9,43 +9,29 @@
   <body class="index">
     <header class="main-header">
       <nav class="main-menu">
-        <ul class="main-menu__navigation">
-          <li class="main-menu__item main-menu__item--active">
-            <h1 class="main-menu__title">
-              Pink
-            </h1>
+        <div class="main-menu__navigation main-menu__navigation--active">
+          <figure class="main-menu__logo">
+            <img src="#" alt="Pink">
+          </figure>
 
-            <button class="main-menu__btn">
-              <div class="main-menu__btn-decoration btn-decoration--close"></div>
+          <button class="main-menu__btn"></button>
+        </div>
 
-              <div class="main-menu__btn-decoration"></div>
-
-              <div class="main-menu__btn-decoration btn-decoration--close"></div>
-            </button>
+        <ul class="main-menu__navigation main-menu__navigation--hidden">
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Главная</a>
           </li>
 
-          <li class="main-menu__item main-menu__item--hidden">
-            <a href="#" class="main-menu__link">
-              Главная
-            </a>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Фотографии</a>
           </li>
 
-          <li class="main-menu__item main-menu__item--hidden">
-            <a href="#" class="main-menu__link">
-              Фотографии
-            </a>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Конкурс</a>
           </li>
 
-          <li class="main-menu__item main-menu__item--hidden">
-            <a href="#" class="main-menu__link">
-              Конкурс
-            </a>
-          </li>
-
-          <li class="main-menu__item main-menu__item--hidden">
-            <a href="#" class="main-menu__link">
-              Html Academy
-            </a>
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Html Academy</a>
           </li>
         </ul>
       </nav>
@@ -57,74 +43,48 @@
 
     <main>
       <section class="apps">
-        <a href="#" class="apps__btn">
-          Скачать приложение
-        </a>
+        <a href="#" class="apps__btn">Скачать приложение</a>
 
         <ul class="apps__navigation">
           <li class="apps__item">
-            <a href="#" class="apps__link ios">
-              Ios
-            </a>
+            <a href="#" class="apps__link apps__link--ios">Ios</a>
           </li>
 
           <li class="apps__item">
-            <a href="#" class="apps__link android">
-              Android
-            </a>
+            <a href="#" class="apps__link apps__link--android">Android</a>
           </li>
 
           <li class="apps__item">
-            <a href="#" class="apps__link win-phone">
-              Windows Phone
-            </a>
+            <a href="#" class="apps__link apps__link--win-phone">Windows Phone</a>
           </li>
         </ul>
 
-        <p>
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
       <div class="suggestion">
-        <p class="suggestion__text suggestion__text-top">
-          Устали от серости мегаполиса?
-        </p>
+        <p class="suggestion__text suggestion__text-top">Устали от серости мегаполиса?</p>
 
-        <p class="suggestion__text suggestion__text-bottom">
-          Нам есть, что вам предложить!
-        </p>
+        <p class="suggestion__text suggestion__text-bottom">Нам есть, что вам предложить!</p>
       </div>
 
       <section class="feature">
-        <div class="feature__content feature__content-mood">
-          <h2 class="feature__title">
-            Поднимает настроение
-          </h2>
+        <div class="feature__content">
+          <h2 class="feature__title">Поднимает настроение</h2>
 
-          <p>
-            Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
-          </p>
+          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </div>
 
-        <div class="feature__content feature__content-change">
-          <h2 class="feature__title">
-            Меняет мир вокруг
-          </h2>
+        <div class="feature__content">
+          <h2 class="feature__title">Меняет мир вокруг</h2>
 
-          <p>
-            Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-          </p>
+          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </div>
 
-        <div class="feature__content feature__content-friends">
-          <h2 class="feature__title">
-            Заводит новых друзей
-          </h2>
+        <div class="feature__content">
+          <h2 class="feature__title">Заводит новых друзей</h2>
 
-          <p>
-            Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
-          </p>
+          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
 
         <figure class="feature__preview">
@@ -133,119 +93,145 @@
       </section>
 
       <section class="review">
-        <h2 class="review__title">
+        <div class="review__slide review__slide1">
+          <h2 class="review__title">Николай Петров</h2>
 
-        </h2>
+          <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
 
-        <p>
+        <div class="review__slide review__slide2">
+          <h2></h2>
 
-        </p>
+          <p></p>
+        </div>
 
-        <div class="review__slider">
-          <input type="radio" name="toggle-review" id="toggle-review1" class="review__input review__input--active" checked>
+        <div class="review__slide review__slide3">
+          <h2></h2>
 
-          <input type="radio" name="toggle-review" id="toggle-review2" class="review__input">
+          <p></p>
+        </div>
 
-          <input type="radio" name="toggle-review" id="toggle-review3" class="review__input">
+        <div class="review__slider-controls">
+          <input type="radio" name="toggle-review" id="toggle-review1" value="toggle-review1" class="review__input review__input--active" checked>
 
-          <div class="review__slider-controls">
-            <label for="toggle-review1" class="review__label"></label>
+          <label for="toggle-review1" class="review__label"></label>
 
-            <label for="toggle-review2" class="review__label"></label>
+          <input type="radio" name="toggle-review" id="toggle-review2" value="toggle-review2" class="review__input">
 
-            <label for="toggle-review3" class="review__label"></label>
-          </div>
+          <label for="toggle-review2" class="review__label"></label>
+
+          <input type="radio" name="toggle-review" id="toggle-review3" value="toggle-review3" class="review__input">
+
+          <label for="toggle-review3" class="review__label"></label>
         </div>
       </section>
 
       <section class="price">
         <header class="price__header">
-          <div class="price__rate">
-            Стандарт
-          </div>
+          <div class="price__rate">Стандарт</div>
 
-          <strong class="price__cost">
-            3,99 usd
-          </strong>
+          <strong class="price__cost">3,99 usd</strong>
 
           <div class="price__mark">Хит</div>
         </header>
 
-        <div class="price__scope">
-          <span class="price__text">
-            Розовый фильтр
-          </span>
+         <div class="price__slide price__slide1">
+          <div class="price__scope">
+            <span class="price__text">Розовый фильтр</span>
 
-          <!--Псевдоэлемент с маркером-->
-        </div>
-
-        <div class="price__scope">
-          <span class="price__text">
-            Смайлики
-          </span>
-
-          <!--Псевдоэлемент с маркером-->
-        </div>
-
-        <div class="price__scope">
-          <span class="price__text">
-            Комментарии
-          </span>
-
-          <!--Псевдоэлемент с маркером-->
-        </div>
-
-        <div class="price__slider">
-          <input type="radio" name="toggle-price" id="toggle-price1" class="price__input">
-
-          <input type="radio" name="toggle-price" id="toggle-price2" class="price__input  price__input--active" checked>
-
-          <input type="radio" name="toggle-price" id="toggle-price3" class="price__input">
-
-          <div class="price__slider-controls">
-            <label for="toggle-price1" class="price__label"></label>
-
-            <label for="toggle-price2" class="price__label"></label>
-
-            <label for="toggle-price3" class="price__label"></label>
+            <!--Псевдоэлемент с маркером-->
           </div>
+
+          <div class="price__scope">
+            <span class="price__text">Смайлики</span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+
+          <div class="price__scope">
+            <span class="price__text">Комментарии</span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+        </div>
+
+        <div class="price__slide price__slide2">
+          <div class="price__scope">
+            <span class="price__text"></span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+
+          <div class="price__scope">
+            <span class="price__text"></span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+
+          <div class="price__scope">
+            <span class="price__text"></span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+        </div>
+
+        <div class="price__slide price__slide3">
+          <div class="price__scope">
+            <span class="price__text"></span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+
+          <div class="price__scope">
+            <span class="price__text"></span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+
+          <div class="price__scope">
+            <span class="price__text"></span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+        </div>
+
+        <div class="price__slider-controls">
+          <input type="radio" name="toggle-price" id="toggle-price1" value="toggle-price1" class="price__input">
+
+          <label for="toggle-price1" class="price__label"></label>
+
+          <input type="radio" name="toggle-price" id="toggle-price2" value="toggle-price2" class="price__input  price__input--active" checked>
+
+          <label for="toggle-price2" class="price__label"></label>
+
+          <input type="radio" name="toggle-price" id="toggle-price3" value="toggle-price3" class="price__input">
+
+          <label for="toggle-price3" class="price__label"></label>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
       <section class="contacts">
-        <p class="contacts__text">
-          Остались вопросы? Свяжитесь с нами!
-        </p>
+        <p class="contacts__content">Остались вопросы? Свяжитесь с нами!</p>
 
         <ul class="contacts__list">
           <li class="contacts__item">
-            <b class="contacts__contact">
-              Звоните:
-            </b>
+            <b class="contacts__text">Звоните:</b>
 
-            <a class="contacts__connect">
-              +7 (812) 555-66-66
-            </a>
+            <a class="contacts__link">+7 (812) 555-66-66</a>
           </li>
-          <li class="contacts__item">
-            <b class="contacts__contact">
-              Пишите:
-            </b>
 
-            <a class="contacts__connect">
-              mail@htmlacademy.ru
-            </a>
+          <li class="contacts__item">
+            <b class="contacts__text">Пишите:</b>
+
+            <a class="contacts__link">mail@htmlacademy.ru</a>
           </li>
-          <li class="contacts__item">
-            <b class="contacts__contact">
-              Приезжайте в гости:
-            </b>
 
-            <a class="contacts__connect">
-              ул. Большая Конюшенная, 19/8
-            </a>
+          <li class="contacts__item">
+            <b class="contacts__text">Приезжайте в гости:</b>
+
+            <a class="contacts__link">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
       </section>
