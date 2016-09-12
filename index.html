@@ -2,11 +2,241 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+  <body class="index">
+    <header class="main-header">
+      <nav class="main-menu">
+        <div class="main-menu__navigation main-menu__navigation--active">
+          <figure class="logo">
+            <img src="#" alt="Pink">
+          </figure>
 
+          <button class="main-menu__btn"></button>
+        </div>
+
+        <ul class="main-menu__navigation main-menu__navigation--hidden">
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Главная</a>
+          </li>
+
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Фотографии</a>
+          </li>
+
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Конкурс</a>
+          </li>
+
+          <li class="main-menu__item">
+            <a href="#" class="main-menu__link">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+
+      <figure class="main-header__preview">
+        <img src="#" alt="Pink">
+      </figure>
+    </header>
+
+    <main>
+      <section class="apps">
+        <a href="#" class="apps__btn">Скачать приложение</a>
+
+        <ul class="apps__navigation">
+          <li class="apps__item">
+            <a href="#" class="apps__link apps__link--ios">Ios</a>
+          </li>
+
+          <li class="apps__item">
+            <a href="#" class="apps__link apps__link--android">Android</a>
+          </li>
+
+          <li class="apps__item">
+            <a href="#" class="apps__link apps__link--win-phone">Windows Phone</a>
+          </li>
+        </ul>
+
+        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+
+      <div class="suggestion">
+        <p class="suggestion__text suggestion__text-top">Устали от серости мегаполиса?</p>
+
+        <p class="suggestion__text suggestion__text-bottom">Нам есть, что вам предложить!</p>
+      </div>
+
+      <section class="feature">
+        <div class="feature__content">
+          <h2 class="feature__title">Поднимает настроение</h2>
+
+          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+
+        <div class="feature__content">
+          <h2 class="feature__title">Меняет мир вокруг</h2>
+
+          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+
+        <div class="feature__content">
+          <h2 class="feature__title">Заводит новых друзей</h2>
+
+          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+
+        <figure class="feature__preview">
+          <img src="#" alt="Pink">
+        </figure>
+      </section>
+
+      <section class="review">
+        <div class="review__slide review__slide1">
+          <h2 class="review__title">Николай Петров</h2>
+
+          <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+
+        <div class="review__slide review__slide2">
+          <h2></h2>
+
+          <p></p>
+        </div>
+
+        <div class="review__slide review__slide3">
+          <h2></h2>
+
+          <p></p>
+        </div>
+
+        <div class="review__slider-controls">
+          <input type="radio" name="toggle-review" id="toggle-review1" value="toggle-review1" class="review__input review__input--active" checked>
+
+          <label for="toggle-review1" class="review__label"></label>
+
+          <input type="radio" name="toggle-review" id="toggle-review2" value="toggle-review2" class="review__input">
+
+          <label for="toggle-review2" class="review__label"></label>
+
+          <input type="radio" name="toggle-review" id="toggle-review3" value="toggle-review3" class="review__input">
+
+          <label for="toggle-review3" class="review__label"></label>
+        </div>
+      </section>
+
+      <section class="price">
+        <header class="price__header">
+          <div class="price__rate">Стандарт</div>
+
+          <strong class="price__cost">3,99 usd</strong>
+
+          <div class="price__mark">Хит</div>
+        </header>
+
+        <div class="price__slide price__slide1">
+          <div class="price__scope">
+            <span class="price__text">Розовый фильтр</span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+
+          <div class="price__scope">
+            <span class="price__text">Смайлики</span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+
+          <div class="price__scope">
+            <span class="price__text">Комментарии</span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+        </div>
+
+        <div class="price__slide price__slide2">
+          <div class="price__scope">
+            <span class="price__text"></span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+
+          <div class="price__scope">
+            <span class="price__text"></span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+
+          <div class="price__scope">
+            <span class="price__text"></span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+        </div>
+
+        <div class="price__slide price__slide3">
+          <div class="price__scope">
+            <span class="price__text"></span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+
+          <div class="price__scope">
+            <span class="price__text"></span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+
+          <div class="price__scope">
+            <span class="price__text"></span>
+
+            <!--Псевдоэлемент с маркером-->
+          </div>
+        </div>
+
+        <div class="price__slider-controls">
+          <input type="radio" name="toggle-price" id="toggle-price1" value="toggle-price1" class="price__input">
+
+          <label for="toggle-price1" class="price__label"></label>
+
+          <input type="radio" name="toggle-price" id="toggle-price2" value="toggle-price2" class="price__input  price__input--active" checked>
+
+          <label for="toggle-price2" class="price__label"></label>
+
+          <input type="radio" name="toggle-price" id="toggle-price3" value="toggle-price3" class="price__input">
+
+          <label for="toggle-price3" class="price__label"></label>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <section class="contacts">
+        <p class="contacts__content">Остались вопросы? Свяжитесь с нами!</p>
+
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <b class="contacts__text">Звоните:</b>
+
+            <a class="contacts__link">+7 (812) 555-66-66</a>
+          </li>
+
+          <li class="contacts__item">
+            <b class="contacts__text">Пишите:</b>
+
+            <a class="contacts__link">mail@htmlacademy.ru</a>
+          </li>
+
+          <li class="contacts__item">
+            <b class="contacts__text">Приезжайте в гости:</b>
+
+            <a class="contacts__link">ул. Большая Конюшенная, 19/8</a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+
+    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7545783283194!2d30.32344483618726!3d59.93870623443853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x1c275a881519dab7!2z0JjQndCi0JXQoNCQ0JrQotCY0JLQndCr0JUg0J7QkdCj0KfQkNCu0KnQmNCVINCi0JXQpdCd0J7Qm9Ce0JPQmNCY!5e0!3m2!1sru!2sru!4v1473513598570" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
   </body>
 </html>
