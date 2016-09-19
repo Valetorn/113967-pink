@@ -1,3 +1,28 @@
 .feature {
+  padding: 0 20px;
   background-color: @bg-color--grey;
+
+  &__content {
+
+    &:first-child {
+      padding-top: 80px;
+    }
+    h1 {
+      margin-bottom: 13px;
+      line-height: 10px;
+      text-align: center;
+    }
+    p {
+      margin-bottom: 40px;
+
+      &:nth-child(2) {
+        width: 290px;
+      }
+    }
+  }
+  &__preview {
+    width: 157px;
+    height: 320px;
+    margin: 0 auto;
+  }
 }

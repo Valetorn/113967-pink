@@ -1,31 +1,68 @@
 .apps {
+  padding: 0 20px;
   background-color: @apps--bg-color;
+
+  &__btn {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 274px;
+    margin-top: 28px;
+    margin-bottom: 32px;
+    padding: 18px 0;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 0 2px 2px #ffffff;
+  }
+  &__navigation {
+    font-size: 0;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    padding-left: 37px;
+    list-style: none;
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+
+    &:not(last-child) {
+      margin-right: 34px;
+    }
+  }
+  &__link {
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+  &__link {
+    &--ios {
+      width: 47px;
+      height: 56px;
+      background-image: url(/img/logo-apple.svg);
+    }
+  }
+  &__link {
+    &--android {
+      width: 43px;
+      height: 47px;
+      background-image: url(/img/logo-android.svg);
+    }
+  }
+  &__link {
+    &--win-phone {
+      width: 44px;
+      height: 41px;
+      background-image: url(/img/logo-microsoft.svg);
+    }
+  }
+  p {
+    color: #b4b7ba;
+    padding-bottom: 20px;
+  }
 }
-.apps__navigation {
-  font-size: 0;
-}
-.apps__item {
-  display: inline-block;
-  vertical-align: middle;
-}
-.apps__link {
-  display: block;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-}
-.apps__link--ios {
-  width: 47px;
-  height: 56px;
-  background-image: url(/img/logo-apple.svg);
-}
-.apps__link--android {
-  width: 43px;
-  height: 47px;
-  background-image: url(/img/logo-android.svg);
-}
-.apps__link--win-phone {
-  width: 44px;
-  height: 41px;
-  background-image: url(/img/logo-microsoft.svg);
-}
+
 
