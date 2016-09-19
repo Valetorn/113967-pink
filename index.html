@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <title>HTML Academy: Пинк</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -10,40 +12,40 @@
 
   <body class="index">
     <header class="main-header">
-      <nav class="main-menu">
-        <div class="main-menu__navigation main-menu__navigation--active">
-          <figure class="logo">
-            <img src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Pink">
-          </figure>
+      <div class="main-header__container">
+        <nav class="main-menu">
+          <div class="main-menu__navigation main-menu__navigation--active main-menu__child">
+            <figure class="logo">
+              <img src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Pink">
+            </figure>
 
-          <button class="main-menu__btn"></button>
-        </div>
+            <button class="main-menu__btn main-menu__btn--active"></button>
+          </div>
 
-        <ul class="main-menu__navigation main-menu__navigation--hidden">
-          <li class="main-menu__item">
-            <a href="#" class="main-menu__link">Главная</a>
-          </li>
+          <ul class="main-menu__navigation main-menu__navigation--hidden">
+            <li class="main-menu__item main-menu__child">
+              <a href="#" class="main-menu__link">Главная</a>
+            </li>
 
-          <li class="main-menu__item">
-            <a href="#" class="main-menu__link">Фотографии</a>
-          </li>
+            <li class="main-menu__item main-menu__child">
+              <a href="#" class="main-menu__link">Фотографии</a>
+            </li>
 
-          <li class="main-menu__item">
-            <a href="#" class="main-menu__link">Конкурс</a>
-          </li>
+            <li class="main-menu__item main-menu__child">
+              <a href="#" class="main-menu__link">Конкурс</a>
+            </li>
 
-          <li class="main-menu__item">
-            <a href="#" class="main-menu__link">Html Academy</a>
-          </li>
-        </ul>
-      </nav>
+            <li class="main-menu__item main-menu__child">
+              <a href="#" class="main-menu__link">Html Academy</a>
+            </li>
+          </ul>
+        </nav>
 
-      <figure class="main-header__preview">
-        <img src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Pink">
-      </figure>
-    </header>
+        <figure class="main-header__preview">
+          <img src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Pink">
+        </figure>
+      </div>
 
-    <main>
       <section class="apps">
         <a href="#" class="apps__btn">Скачать приложение</a>
 
@@ -63,11 +65,13 @@
 
         <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
+    </header>
 
+    <main>
       <div class="suggestion">
-        <p class="suggestion__text suggestion__text-top">Устали от серости мегаполиса?</p>
+        <p class="suggestion__text suggestion__text--top">Устали от серости мегаполиса?</p>
 
-        <p class="suggestion__text suggestion__text-bottom">Нам есть, что вам предложить!</p>
+        <p class="suggestion__text suggestion__text--bottom">Нам есть, что вам предложить!</p>
       </div>
 
       <section class="feature">
@@ -95,6 +99,12 @@
       </section>
 
       <section class="review">
+        <input type="radio" name="toggle-review" id="toggle-review1" value="toggle-review1" class="review__input review__input--active" checked>
+
+        <input type="radio" name="toggle-review" id="toggle-review2" value="toggle-review2" class="review__input">
+
+        <input type="radio" name="toggle-review" id="toggle-review3" value="toggle-review3" class="review__input">
+
         <div class="review__slide review__slide1">
           <h1 class="review__title">Николай Петров</h1>
 
@@ -102,27 +112,24 @@
         </div>
 
         <div class="review__slide review__slide2">
-          <h1></h1>
+          <h1 class="review__title"></h1>
 
           <p></p>
         </div>
 
         <div class="review__slide review__slide3">
-          <h1></h1>
+          <h1 class="review__title"></h1>
 
           <p></p>
         </div>
 
         <div class="review__slider-controls">
-          <input type="radio" name="toggle-review" id="toggle-review1" value="toggle-review1" class="review__input review__input--active" checked>
 
           <label for="toggle-review1" class="review__label"></label>
 
-          <input type="radio" name="toggle-review" id="toggle-review2" value="toggle-review2" class="review__input">
 
           <label for="toggle-review2" class="review__label"></label>
 
-          <input type="radio" name="toggle-review" id="toggle-review3" value="toggle-review3" class="review__input">
 
           <label for="toggle-review3" class="review__label"></label>
         </div>
