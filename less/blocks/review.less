@@ -1,6 +1,12 @@
 .review {
-  padding: 0 20px;
 
+  &::after {
+    content: '';
+    display: block;
+    height: 35px;
+    background-color: #ffffff;
+    transform: translateY(20px) skewY(-5deg);
+  }
   &__slide {
     display: none;
   }
@@ -11,8 +17,9 @@
     text-align: center;
   }
   p {
-    width: 290px;
-    margin-bottom: 43px;
+    width: 270px;
+    padding: 0 20px;
+    margin-bottom: 35px;
     line-height: 30px;
   }
   &__input {
