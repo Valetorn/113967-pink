@@ -1,30 +1,36 @@
 .price {
   padding-top: 65px;
   background-color: @bg-color--grey;
+  overflow: hidden;
 
+  &__container {
+    &:first-child .price__cell {
+      text-align: left;
+    }
+  }
   &__table {
-    width: 100%;
+    width: 620px;
   }
   &__header {
-    background-color: @bg-color--dark-blue;
+
   }
   &__title {
     width: 150px;
     height: 80px;
     position: relative;
     text-transform: uppercase;
+    background-color: @bg-color--dark-blue;
     overflow: hidden;
 
     &--hidden {
-      background-color: @bg-color--grey;
+      background-color: transparent;
     }
   }
   &__cell {
+    height: 45px;
+    padding-left: 18px;
     text-align: center;
-
-    &:first-child {
-      text-align: left;
-    }
+    background-color: #ffffff;
   }
   h2 {
     margin-top: 14px;
@@ -50,9 +56,31 @@
     background-color: #d22856;
     transform: rotate(-45deg);
   }
-  &__cell {
-    height: 45px;
-    padding-left: 18px;
-    background-color: #ffffff;
+  &__input {
+    display: none;
   }
+  &__slider-controls {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  &__label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    background-color: #bec2c7;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+#toggle-price1:checked ~ .price__slider-controls label[for="toggle-price1"],
+#toggle-price2:checked ~ .price__slider-controls label[for="toggle-price2"],
+#toggle-price3:checked ~ .price__slider-controls label[for="toggle-price3"]{
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px #283645;
 }

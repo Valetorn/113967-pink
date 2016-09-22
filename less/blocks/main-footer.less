@@ -1,0 +1,17 @@
+.main-footer {
+  position: relative;
+  z-index: 2;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -75px;
+    left: 0;
+    right: 0;
+    height: 75px;
+    background-image: url(/img/bg-triangle-white-footer.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+  }
+}
