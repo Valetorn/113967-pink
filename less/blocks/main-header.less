@@ -2,12 +2,11 @@
   position: relative;
   width: auto;
   margin: 0 auto;
-  background-color: @main-header--bg-color;
 
   &__container {
-  background-image: url(/img/bg-back-mobile@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% 100%;
+    background-image: url(/img/bg-back-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
 }
   &__preview {
     height: 286px;
@@ -20,17 +19,19 @@
   }
 }
 .main-menu {
-  background-color: rgba(30, 39, 51, 1);
+
 
   &__navigation {
-    &--active {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 20px;
-      padding-bottom: 22px;
-    }
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &--hidden {
+        display: none;
+      }
   }
   &__btn {
+    display: block;
     margin-right: 20px;
     background-repeat: no-repeat;
     background-position: 100% 100%;
@@ -46,18 +47,23 @@
       background-image: url(/img/icon-menu-cross.svg);
     }
   }
-  &__navigation {
-    &--hidden {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-  }
   &__item {
     border-top: 1px solid #485461;
   }
   &__child {
+    background-color: rgba(30, 39, 51, 1);
     border-bottom: 1px solid #000000;
+  }
+  &__top-block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 22px;
+
+    &--active {
+      border: none;
+      background-color: rgba(30, 39, 51, 0.7);
+    }
   }
   &__link {
     display: inline-block;

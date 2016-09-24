@@ -14,15 +14,15 @@
     <header class="main-header">
       <div class="main-header__container">
         <nav class="main-menu">
-          <div class="main-menu__navigation main-menu__navigation--active main-menu__child">
+          <div class="main-menu__top-block main-menu__child">
             <figure class="logo">
               <img src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Pink">
             </figure>
 
-            <button class="main-menu__btn main-menu__btn--active"></button>
+            <button class="main-menu__btn main-menu__btn--close"></button>
           </div>
 
-          <ul class="main-menu__navigation main-menu__navigation--hidden">
+          <ul class="main-menu__navigation">
             <li class="main-menu__item main-menu__child">
               <a href="#" class="main-menu__link">Главная</a>
             </li>
@@ -141,129 +141,7 @@
 
         <input type="radio" name="toggle-price" id="toggle-price3" value="toggle-price3" class="price__input">
 
-        <!--<div class="price__container price__slide1">
-          <table class="price__table">
-            <tr class="price__row">
-              <th class="price__title price__title--hidden"></th>
-            </tr>
-
-            <tr class="price__row">
-              <td class="price__cell">Розовый фильтр</td>
-            </tr>
-
-            <tr class="price__row">
-              <td class="price__cell">Смайлики</td>
-            </tr>
-
-            <tr class="price__row">
-              <td class="price__cell">Комментарии</td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="price__container price__slide2">
-          <table class="price__table">
-            <tr class="price__row">
-              <th class="price__title">
-                <h2>База</h2>
-
-                <span class="price__cost">1,99 usd</span>
-              </th>
-            </tr>
-
-            <tr class="price__row">
-              <td class="price__cell">
-                <div class="tick tick--yes">+</div>
-              </td>
-            </tr>
-
-            <tr class="price__row">
-              <td class="price__cell">
-                <div class="tick tick--no">+</div>
-              </td>
-            </tr>
-
-            <tr class="price__row">
-              <td class="price__cell">
-                <div class="tick tick--no">+</div>
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="price__container price__slide3">
-          <table class="price__table">
-            <tr class="price__row">
-              <th class="price__title">
-                <h2>Стандарт</h2>
-
-                <span class="price__cost">3,99 usd</span>
-
-                <div class="price__hit">Хит</div>
-              </th>
-            </tr>
-
-            <tr class="price__row">
-              <td class="price__cell">
-                <div class="tick tick--yes">+</div>
-              </td>
-            </tr>
-
-            <tr class="price__row">
-              <td class="price__cell">
-                <div class="tick tick--yes">+</div>
-              </td>
-            </tr>
-
-            <tr class="price__row">
-              <td class="price__cell">
-                <div class="tick tick--no">+</div>
-              </td>
-            </tr>
-          </table>
-        </div>
-
-        <div class="price__container price__slide4">
-          <table class="price__table">
-            <tr class="price__row">
-              <th class="price__title">
-                <h2>Анлим</h2>
-
-                <span class="price__cost">9,99 usd</span>
-              </th>
-            </tr>
-
-            <tr class="price__row">
-              <td class="price__cell">
-                <div class="tick tick--yes">+</div>
-              </td>
-            </tr>
-
-            <tr class="price__row">
-              <td class="price__cell">
-                <div class="tick tick--yes">+</div>
-              </td>
-            </tr>
-
-            <tr class="price__row">
-              <td class="price__cell">
-                <div class="tick tick--yes">+</div>
-              </td>
-            </tr>
-          </table>
-        </div>-->
-
         <table class="price__table">
-          <colgroup>
-            <col  class="price__col1">
-
-            <col class="price__col2">
-
-            <col class="price__col3">
-
-            <col class="price__col4">
-          </colgroup>
-
           <thead class="price__header">
             <tr class="price__row">
               <th class="price__title price__title--hidden"></th>
@@ -294,15 +172,27 @@
             <td class="price__cell">Розовый фильтр</td>
 
             <td class="price__cell">
-              <div class="tick tick--yes">+</div>
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Розовый фильтр</div>
+
+                <div class="tick tick--yes">+</div>
+              </div>
             </td>
 
             <td class="price__cell">
-              <div class="tick tick--yes">+</div>
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Розовый фильтр</div>
+
+                <div class="tick tick--yes">+</div>
+              </div>
             </td>
 
             <td class="price__cell">
-              <div class="tick tick--yes">+</div>
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Розовый фильтр</div>
+
+                <div class="tick tick--yes">+</div>
+              </div>
             </td>
           </tr>
 
@@ -310,15 +200,27 @@
             <td class="price__cell">Смайлики</td>
 
             <td class="price__cell">
-              <div class="tick tick--no">-</div>
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Смайлики</div>
+
+                <div class="tick tick--no">-</div>
+              </div>
             </td>
 
             <td class="price__cell">
-              <div class="tick tick--yes">+</div>
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Смайлики</div>
+
+                <div class="tick tick--yes">-</div>
+              </div>
             </td>
 
             <td class="price__cell">
-              <div class="tick tick--yes">+</div>
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Смайлики</div>
+
+                <div class="tick tick--yes">-</div>
+              </div>
             </td>
           </tr>
 
@@ -326,15 +228,27 @@
             <td class="price__cell">Комментарии</td>
 
             <td class="price__cell">
-              <div class="tick tick--no">-</div>
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Комментарии</div>
+
+                <div class="tick tick--no">-</div>
+              </div>
             </td>
 
             <td class="price__cell">
-              <div class="tick tick--no">-</div>
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Комментарии</div>
+
+                <div class="tick tick--no">-</div>
+              </div>
             </td>
 
             <td class="price__cell">
-              <div class="tick tick--yes">+</div>
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Комментарии</div>
+
+                <div class="tick tick--yes">-</div>
+              </div>
             </td>
           </tr>
         </table>
@@ -349,7 +263,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <section class="reach">
       <section class="contacts">
         <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
 
@@ -374,8 +288,10 @@
 
         </div>
       </section>
-    </footer>
 
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7545783283194!2d30.32344483618726!3d59.93870623443853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x1c275a881519dab7!2z0JjQndCi0JXQoNCQ0JrQotCY0JLQndCr0JUg0J7QkdCj0KfQkNCu0KnQmNCVINCi0JXQpdCd0J7Qm9Ce0JPQmNCY!5e0!3m2!1sru!2sru!4v1473513598570" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7545783283194!2d30.32344483618726!3d59.93870623443853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x1c275a881519dab7!2z0JjQndCi0JXQoNCQ0JrQotCY0JLQndCr0JUg0J7QkdCj0KfQkNCu0KnQmNCVINCi0JXQpdCd0J7Qm9Ce0JPQmNCY!5e0!3m2!1sru!2sru!4v1473513598570" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
