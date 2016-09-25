@@ -1,10 +1,7 @@
 .price {
   padding-top: 65px;
   background-color: @bg-color--grey;
-  overflow: hidden;
 
-   &__table {
-  }
   &__title {
     position: relative;
     text-transform: uppercase;
@@ -12,12 +9,10 @@
     overflow: hidden;
 
     &--hidden {
-      display: none;
       background-color: transparent;
     }
   }
   h2 {
-    width: 280px;
     margin-top: 14px;
     font-size: 16px;
     line-height: 30px;
@@ -32,7 +27,7 @@
   &__hit {
     position: absolute;
     top: 5px;
-    left: -30px;
+    left: -32px;
     width: 104px;
     height: 30px;
     line-height: 30px;
@@ -49,26 +44,15 @@
     text-align: center;
     text-transform: uppercase;
     background-color: #ffffff;
-
-    &:first-child {
-      display: none;
-    }
-  }
-  &__cell-container {
-    display: flex;
-    justify-content: space-between;
   }
   &__ability--hidden {
-
+    display: none;
   }
   &__input {
     display: none;
   }
   &__slider-controls {
-
-    width: 100%;
-    display: inline-block;
-    text-align: center;
+    display: none;
   }
   &__label {
     display: inline-block;
@@ -84,15 +68,64 @@
     }
   }
 }
-#toggle-price1:checked ~ .price__slider-controls label[for="toggle-price1"],
-#toggle-price2:checked ~ .price__slider-controls label[for="toggle-price2"],
-#toggle-price3:checked ~ .price__slider-controls label[for="toggle-price3"]{
-  background-color: #ffffff;
-  box-shadow: 0 0 0 3px #283645;
+/* max-width: 659px */
+
+@media (max-width: 659px) {
+  .price {
+    overflow: hidden;
+
+    &__title {
+
+      &--hidden {
+        display: none;
+      }
+    }
+    h2 {
+      width: 280px;
+    }
+    &__cell {
+      &:first-child {
+        display: none;
+      }
+    }
+    &__cell-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__ability--hidden {
+      display: inherit;
+    }
+    &__slider-controls {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  #toggle-price1:checked ~ .price__slider-controls label[for="toggle-price1"],
+  #toggle-price2:checked ~ .price__slider-controls label[for="toggle-price2"],
+  #toggle-price3:checked ~ .price__slider-controls label[for="toggle-price3"]{
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px #283645;
+  }
+  #toggle-price2:checked ~ .price__table {
+    margin-left: -267px;
+  }
+  #toggle-price3:checked ~ .price__table {
+    margin-left: -533px;
+  }
 }
-#toggle-price2:checked ~ .price__table {
-  margin-left: -267px;
-}
-#toggle-price3:checked ~ .price__table {
-  margin-left: -533px;
+/* min-width: 660px */
+
+@media (min-width: 660px) {
+  .price {
+    padding: 0 20px;
+
+    &__table {
+      margin-top: 35px;
+      margin-bottom: 70px;
+    }
+    h2 {
+      width: 150px;
+    }
+  }
 }

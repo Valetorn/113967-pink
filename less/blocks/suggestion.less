@@ -6,13 +6,37 @@
 
   &__text {
     font-size: 24px;
+    font-weight: 300;
 
     &--top {
       padding-top: 46px;
       margin-bottom: 44px;
     }
     &--bottom {
-      padding-bottom: 60px;
+      padding-bottom: 50px;
+    }
+  }
+}
+/* min-width: 660px */
+
+@media (min-width: 660px) {
+  .suggestion {
+    padding: 0 20px;
+    text-align: center;
+
+    &__text {
+      font-size: 40px;
+
+      &--top {
+        padding-bottom: 0;
+      }
+      &--bottom {
+        width: 340px;
+        line-height: 45px;
+        margin: 0 auto;
+        margin-top: -25px;
+        padding-bottom: 80px;
+      }
     }
   }
 }

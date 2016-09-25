@@ -77,22 +77,24 @@
       </div>
 
       <section class="feature">
-        <div class="feature__content">
-          <h1 class="feature__title">Поднимает настроение</h1>
+        <div class="feature__content-container">
+          <div class="feature__content">
+            <h1 class="feature__title">Поднимает настроение</h1>
 
-          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        </div>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
 
-        <div class="feature__content">
-          <h1 class="feature__title">Меняет мир вокруг</h1>
+          <div class="feature__content">
+            <h1 class="feature__title">Меняет мир вокруг</h1>
 
-          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
 
-        <div class="feature__content">
-          <h1 class="feature__title">Заводит новых друзей</h1>
+          <div class="feature__content">
+            <h1 class="feature__title">Заводит новых друзей</h1>
 
-          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+            <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
         </div>
 
         <figure class="feature__preview">
@@ -107,22 +109,42 @@
 
         <input type="radio" name="toggle-review" id="toggle-review3" value="toggle-review3" class="review__input">
 
+        <div class="review__time review__time--hidden">
+          <figure class="review__logo-time">
+            <img src="img/icon-editor-diagram-fill.svg" width="239" height="279" alt="24 часа">
+          </figure>
+
+          <div class="review__content">
+            <h1 class="review__title-content">Эффект на 24 часа!</h1>
+
+            <p class="review__content-text">Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
+
+            <a href="#" class="review__link">Узнать больше об исследовании</a>
+          </div>
+        </div>
+
         <div class="review__slide review__slide1">
           <h1 class="review__title">Николай Петров</h1>
 
-          <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <span class="review__autor-info review__autor-info--hidden">25 лет, водитель трамвая</span>
+
+          <p class="review__slide-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
 
         <div class="review__slide review__slide2">
           <h1 class="review__title">Lorem ipsum</h1>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus veritatis aut molestiae recusandae ex dolores ut cumque non odit et enim saepe omnis possimus deserunt nesciunt sint vitae aliquid, mollitia?</p>
+          <span class="review__autor-info review__autor-info--hidden">25 лет, водитель трамвая</span>
+
+          <p class="review__slide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus veritatis aut molestiae recusandae ex dolores ut cumque non odit et enim saepe omnis possimus deserunt nesciunt sint vitae aliquid, mollitia?</p>
         </div>
 
         <div class="review__slide review__slide3">
           <h1 class="review__title">Lorem ipsum</h1>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, veritatis. Esse aliquam similique vel sapiente, est! Laudantium at non hic a. Aspernatur, quo, labore consectetur impedit reiciendis praesentium rem. Amet!</p>
+          <span class="review__autor-info review__autor-info--hidden">25 лет, водитель трамвая</span>
+
+          <p class="review__slide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, veritatis. Esse aliquam similique vel sapiente, est! Laudantium at non hic a. Aspernatur, quo, labore consectetur impedit reiciendis praesentium rem. Amet!</p>
         </div>
 
         <div class="review__slider-controls">
@@ -268,29 +290,58 @@
         <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
 
         <div class="contacts__container-content">
-            <p>
+            <p class="contacts__text-container">
               <b class="contacts__text--bold">Звоните:</b><br>
 
               <a href="#" class="contacts__link">+7 (812) 555-66-66</a>
             </p>
 
-            <p>
+            <p class="contacts__text-container">
               <b class="contacts__text--bold">Пишите:</b><br>
 
               <a href="#" class="contacts__link">mail@htmlacademy.ru</a>
             </p>
 
-            <p>
+            <p class="contacts__text-container">
               <b class="contacts__text--bold">Приезжайте в гости:</b><br>
 
               <a href="#" class="contacts__link">ул. Большая Конюшенная, 19/8</a>
             </p>
-
         </div>
       </section>
 
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7545783283194!2d30.32344483618726!3d59.93870623443853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x1c275a881519dab7!2z0JjQndCi0JXQoNCQ0JrQotCY0JLQndCr0JUg0J7QkdCj0KfQkNCu0KnQmNCVINCi0JXQpdCd0J7Qm9Ce0JPQmNCY!5e0!3m2!1sru!2sru!4v1473513598570" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
+
+    <footer class="main-footer main-footer--hidden">
+      <figure class="main-footer__logo">
+        <img src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="Pink">
+      </figure>
+
+      <section class="social">
+        <ul class="social__navigation">
+          <li class="social__item">
+            <a href="#" class="social__btn social__btn--tw">Twitter</a>
+          </li>
+
+          <li class="social__item">
+            <a href="#" class="social__btn social__btn--fb">Facebook</a>
+          </li>
+
+          <li class="social__item">
+            <a href="#" class="social__btn social__btn--yb">Youtube</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="developer">
+        <span class="developer__text">Разработано</span>
+
+        <figure class="developer__logo">
+          <img src="img/htmlacademy.svg" width="60" height="60" alt="Html Academy">
+        </figure>
+      </section>
+    </footer>
 
     <script src="js/script.js"></script>
   </body>
