@@ -42,7 +42,6 @@
     padding-right: 10px;
     line-height: 30px;
     text-align: center;
-    text-transform: uppercase;
     background-color: #ffffff;
   }
   &__ability--hidden {
@@ -94,6 +93,7 @@
     }
     &__ability--hidden {
       display: inherit;
+      text-transform: uppercase;
     }
     &__slider-controls {
       width: 100%;
@@ -126,6 +126,15 @@
     }
     h2 {
       width: 150px;
+    }
+    &__cell {
+      width: 150px;
+      padding: 0;
+
+      &:first-child {
+        padding-left: 14px;
+        text-align: left;
+      }
     }
   }
 }

@@ -19,7 +19,7 @@
               <img src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Pink">
             </figure>
 
-            <button class="main-menu__btn main-menu__btn--close"></button>
+            <button class="main-menu__btn main-menu__btn--hidden main-menu__btn--close"></button>
           </div>
 
           <ul class="main-menu__navigation">
@@ -97,10 +97,34 @@
           </div>
         </div>
 
-        <figure class="feature__preview">
-          <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Pink">
-        </figure>
+        <div class="feature__preview-container">
+          <figure class="feature__preview feature__preview--hidden">
+              <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Pink">
+          </figure>
+
+          <figure class="feature__preview feature__preview--hidden">
+              <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Pink">
+          </figure>
+
+          <figure class="feature__preview">
+              <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Pink">
+          </figure>
+        </div>
       </section>
+
+      <article class="time time--hidden">
+        <figure class="time__logo">
+          <img src="img/icon-editor-diagram-fill.svg" width="239" height="279" alt="24 часа">
+        </figure>
+
+        <div class="time__content">
+          <h1 class="time__title">Эффект<br> на 24 часа!</h1>
+
+          <p class="time__text">Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
+
+          <a href="#" class="time__link">Узнать больше об исследовании</a>
+        </div>
+      </article>
 
       <section class="review">
         <input type="radio" name="toggle-review" id="toggle-review1" value="toggle-review1" class="review__input review__input--active" checked>
@@ -108,20 +132,6 @@
         <input type="radio" name="toggle-review" id="toggle-review2" value="toggle-review2" class="review__input">
 
         <input type="radio" name="toggle-review" id="toggle-review3" value="toggle-review3" class="review__input">
-
-        <div class="review__time review__time--hidden">
-          <figure class="review__logo-time">
-            <img src="img/icon-editor-diagram-fill.svg" width="239" height="279" alt="24 часа">
-          </figure>
-
-          <div class="review__content">
-            <h1 class="review__title-content">Эффект на 24 часа!</h1>
-
-            <p class="review__content-text">Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
-
-            <a href="#" class="review__link">Узнать больше об исследовании</a>
-          </div>
-        </div>
 
         <div class="review__slide review__slide1">
           <h1 class="review__title">Николай Петров</h1>
