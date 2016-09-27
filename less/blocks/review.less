@@ -43,7 +43,7 @@
 
     &:not(:last-child) {
       margin-right: 20px;
-    }
+      }
   }
 }
 #toggle-review1:checked ~ .review__slide1,
@@ -72,14 +72,13 @@
 
 @media (min-width: 660px) {
   .review {
-
     &__slide {
       margin: auto;
       width: 620px;
     }
     &__title {
       font-size: 20px;
-      color: white;
+      color: #000000;
       order: 2;
     }
     &__autor-info {
@@ -98,5 +97,56 @@
 /* min-width: 960px */
 
 @media (min-width: 960px) {
+  .review {
+    padding: 0 10px;
+    position: relative;
+    min-height: 487px;
 
+    &::before {
+      content: '';
+      position: absolute;
+      top: 63px;
+      left: 50%;
+      width: 78px;
+      height: 63px;
+      background-image: url(/img/icon-quotes.svg);
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+    }
+    &__slide {
+      padding-top: 180px;
+    }
+    &__slide-text {
+      width: 690px;
+    }
+    &__label {
+      position: absolute;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      border: 3px solid #bec2c7;
+      border-top: none;
+      border-right: none;
+      border-radius: 0;
+
+      &:nth-child(1) {
+        left: 10px;
+        transform: rotate(45deg);
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        right: 10px;
+        transform: rotate(-135deg);
+      }
+    }
+  }
+  #toggle-review1:checked ~ .review__slider-controls label[for="toggle-review1"],
+  #toggle-review3:checked ~ .review__slider-controls label[for="toggle-review3"] {
+
+    box-shadow: none;
+    opacity: 0.5;
+  }
 }
