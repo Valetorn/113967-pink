@@ -14,15 +14,15 @@
     <header class="main-header">
       <div class="main-header__container">
         <nav class="main-menu">
-          <div class="main-menu__navigation main-menu__navigation--active main-menu__child">
+          <div class="main-menu__top-block main-menu__child">
             <figure class="logo">
               <img src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="Pink">
             </figure>
 
-            <button class="main-menu__btn main-menu__btn--active"></button>
+            <button class="main-menu__btn main-menu__btn--hidden main-menu__btn--close"></button>
           </div>
 
-          <ul class="main-menu__navigation main-menu__navigation--hidden">
+          <ul class="main-menu__navigation">
             <li class="main-menu__item main-menu__child">
               <a href="#" class="main-menu__link">Главная</a>
             </li>
@@ -47,6 +47,8 @@
       </div>
 
       <section class="apps">
+        <p class="apps__text--hidden">Взгляните на жизнь иначе!</p>
+
         <a href="#" class="apps__btn">Скачать приложение</a>
 
         <ul class="apps__navigation">
@@ -63,7 +65,7 @@
           </li>
         </ul>
 
-        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="apps__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
     </header>
 
@@ -75,28 +77,54 @@
       </div>
 
       <section class="feature">
-        <div class="feature__content">
-          <h1 class="feature__title">Поднимает настроение</h1>
+        <div class="feature__content-container">
+          <div class="feature__content">
+            <h1 class="feature__title">Поднимает настроение</h1>
 
-          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+
+          <div class="feature__content">
+            <h1 class="feature__title">Меняет мир вокруг</h1>
+
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+
+          <div class="feature__content">
+            <h1 class="feature__title">Заводит новых друзей</h1>
+
+            <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
         </div>
 
-        <div class="feature__content">
-          <h1 class="feature__title">Меняет мир вокруг</h1>
+        <div class="feature__preview-container">
+          <figure class="feature__preview feature__preview--hidden">
+              <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Pink">
+          </figure>
 
-          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <figure class="feature__preview feature__preview--hidden">
+              <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Pink">
+          </figure>
+
+          <figure class="feature__preview">
+              <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Pink">
+          </figure>
         </div>
-
-        <div class="feature__content">
-          <h1 class="feature__title">Заводит новых друзей</h1>
-
-          <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-        </div>
-
-        <figure class="feature__preview">
-          <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Pink">
-        </figure>
       </section>
+
+      <article class="time time--hidden">
+        <figure class="time__logo">
+          <img src="img/icon-editor-diagram-fill.svg" width="239" height="279" alt="24 часа">
+        </figure>
+
+        <div class="time__content">
+          <h1 class="time__title">Эффект<br> на 24 часа!</h1>
+
+          <p class="time__text">Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
+
+          <a href="#" class="time__link">Узнать больше об исследовании</a>
+        </div>
+      </article>
 
       <section class="review">
         <input type="radio" name="toggle-review" id="toggle-review1" value="toggle-review1" class="review__input review__input--active" checked>
@@ -108,144 +136,223 @@
         <div class="review__slide review__slide1">
           <h1 class="review__title">Николай Петров</h1>
 
-          <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          <span class="review__autor-info review__autor-info--hidden">25 лет, водитель трамвая</span>
+
+          <p class="review__slide-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
 
         <div class="review__slide review__slide2">
-          <h1 class="review__title"></h1>
+          <h1 class="review__title">Lorem ipsum</h1>
 
-          <p></p>
+          <span class="review__autor-info review__autor-info--hidden">25 лет, водитель трамвая</span>
+
+          <p class="review__slide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus veritatis aut molestiae recusandae ex dolores ut cumque non odit et enim saepe omnis possimus deserunt nesciunt sint vitae aliquid, mollitia?</p>
         </div>
 
         <div class="review__slide review__slide3">
-          <h1 class="review__title"></h1>
+          <h1 class="review__title">Lorem ipsum</h1>
 
-          <p></p>
+          <span class="review__autor-info review__autor-info--hidden">25 лет, водитель трамвая</span>
+
+          <p class="review__slide-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, veritatis. Esse aliquam similique vel sapiente, est! Laudantium at non hic a. Aspernatur, quo, labore consectetur impedit reiciendis praesentium rem. Amet!</p>
         </div>
 
         <div class="review__slider-controls">
-
           <label for="toggle-review1" class="review__label"></label>
 
-
           <label for="toggle-review2" class="review__label"></label>
-
 
           <label for="toggle-review3" class="review__label"></label>
         </div>
       </section>
 
       <section class="price">
-        <header class="price__header">
-          <div class="price__rate">Стандарт</div>
+        <input type="radio" name="toggle-price" id="toggle-price1" value="toggle-price1" class="price__input">
 
-          <strong class="price__cost">3,99 usd</strong>
+        <input type="radio" name="toggle-price" id="toggle-price2" value="toggle-price2" class="price__input  price__input--active" checked>
 
-          <div class="price__mark">Хит</div>
-        </header>
+        <input type="radio" name="toggle-price" id="toggle-price3" value="toggle-price3" class="price__input">
 
-        <div class="price__slide price__slide1">
-          <div class="price__scope">
-            <span class="price__text">Розовый фильтр</span>
+        <table class="price__table">
+          <thead class="price__header">
+            <tr class="price__row">
+              <th class="price__title price__title--hidden"></th>
 
-            <!--Псевдоэлемент с маркером-->
-          </div>
+              <th class="price__title">
+                <h2>База</h2>
 
-          <div class="price__scope">
-            <span class="price__text">Смайлики</span>
+                <span class="price__cost">1,99 usd</span>
+              </th>
 
-            <!--Псевдоэлемент с маркером-->
-          </div>
+              <th class="price__title">
+                <h2>Стандарт</h2>
 
-          <div class="price__scope">
-            <span class="price__text">Комментарии</span>
+                <span class="price__cost">3,99 usd</span>
 
-            <!--Псевдоэлемент с маркером-->
-          </div>
-        </div>
+                <div class="price__hit">Хит</div>
+              </th>
 
-        <div class="price__slide price__slide2">
-          <div class="price__scope">
-            <span class="price__text"></span>
+              <th class="price__title">
+                <h2>Анлим</h2>
 
-            <!--Псевдоэлемент с маркером-->
-          </div>
+                <span class="price__cost">9,99 usd</span>
+              </th>
+            </tr>
+          </thead>
 
-          <div class="price__scope">
-            <span class="price__text"></span>
+          <tr class="price__row">
+            <td class="price__cell">Розовый фильтр</td>
 
-            <!--Псевдоэлемент с маркером-->
-          </div>
+            <td class="price__cell">
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Розовый фильтр</div>
 
-          <div class="price__scope">
-            <span class="price__text"></span>
+                <div class="tick tick--yes">+</div>
+              </div>
+            </td>
 
-            <!--Псевдоэлемент с маркером-->
-          </div>
-        </div>
+            <td class="price__cell">
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Розовый фильтр</div>
 
-        <div class="price__slide price__slide3">
-          <div class="price__scope">
-            <span class="price__text"></span>
+                <div class="tick tick--yes">+</div>
+              </div>
+            </td>
 
-            <!--Псевдоэлемент с маркером-->
-          </div>
+            <td class="price__cell">
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Розовый фильтр</div>
 
-          <div class="price__scope">
-            <span class="price__text"></span>
+                <div class="tick tick--yes">+</div>
+              </div>
+            </td>
+          </tr>
 
-            <!--Псевдоэлемент с маркером-->
-          </div>
+          <tr class="price__row">
+            <td class="price__cell">Смайлики</td>
 
-          <div class="price__scope">
-            <span class="price__text"></span>
+            <td class="price__cell">
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Смайлики</div>
 
-            <!--Псевдоэлемент с маркером-->
-          </div>
-        </div>
+                <div class="tick tick--no">-</div>
+              </div>
+            </td>
+
+            <td class="price__cell">
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Смайлики</div>
+
+                <div class="tick tick--yes">-</div>
+              </div>
+            </td>
+
+            <td class="price__cell">
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Смайлики</div>
+
+                <div class="tick tick--yes">-</div>
+              </div>
+            </td>
+          </tr>
+
+          <tr class="price__row">
+            <td class="price__cell">Комментарии</td>
+
+            <td class="price__cell">
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Комментарии</div>
+
+                <div class="tick tick--no">-</div>
+              </div>
+            </td>
+
+            <td class="price__cell">
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Комментарии</div>
+
+                <div class="tick tick--no">-</div>
+              </div>
+            </td>
+
+            <td class="price__cell">
+              <div class="price__cell-container">
+                <div class="price__ability--hidden">Комментарии</div>
+
+                <div class="tick tick--yes">-</div>
+              </div>
+            </td>
+          </tr>
+        </table>
 
         <div class="price__slider-controls">
-          <input type="radio" name="toggle-price" id="toggle-price1" value="toggle-price1" class="price__input">
-
           <label for="toggle-price1" class="price__label"></label>
 
-          <input type="radio" name="toggle-price" id="toggle-price2" value="toggle-price2" class="price__input  price__input--active" checked>
-
           <label for="toggle-price2" class="price__label"></label>
-
-          <input type="radio" name="toggle-price" id="toggle-price3" value="toggle-price3" class="price__input">
 
           <label for="toggle-price3" class="price__label"></label>
         </div>
       </section>
     </main>
 
-    <footer class="main-footer">
+    <section class="reach">
       <section class="contacts">
-        <p class="contacts__content">Остались вопросы? Свяжитесь с нами!</p>
+        <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
 
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <b class="contacts__text">Звоните:</b>
+        <div class="contacts__container-content">
+            <p class="contacts__text-container">
+              <b class="contacts__text--bold">Звоните:</b><br>
 
-            <a class="contacts__link">+7 (812) 555-66-66</a>
+              <a href="#" class="contacts__link">+7 (812) 555-66-66</a>
+            </p>
+
+            <p class="contacts__text-container">
+              <b class="contacts__text--bold">Пишите:</b><br>
+
+              <a href="#" class="contacts__link">mail@htmlacademy.ru</a>
+            </p>
+
+            <p class="contacts__text-container">
+              <b class="contacts__text--bold">Приезжайте в гости:</b><br>
+
+              <a href="#" class="contacts__link">ул. Большая Конюшенная, 19/8</a>
+            </p>
+        </div>
+      </section>
+
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7545783283194!2d30.32344483618726!3d59.93870623443853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x1c275a881519dab7!2z0JjQndCi0JXQoNCQ0JrQotCY0JLQndCr0JUg0J7QkdCj0KfQkNCu0KnQmNCVINCi0JXQpdCd0J7Qm9Ce0JPQmNCY!5e0!3m2!1sru!2sru!4v1473513598570" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+    <footer class="main-footer main-footer--hidden">
+      <figure class="main-footer__logo">
+        <img src="img/logo-pink-blue-mobile.svg" width="147" height="41" alt="Pink">
+      </figure>
+
+      <section class="social">
+        <ul class="social__navigation">
+          <li class="social__item">
+            <a href="#" class="social__btn social__btn--tw">Twitter</a>
           </li>
 
-          <li class="contacts__item">
-            <b class="contacts__text">Пишите:</b>
-
-            <a class="contacts__link">mail@htmlacademy.ru</a>
+          <li class="social__item">
+            <a href="#" class="social__btn social__btn--fb">Facebook</a>
           </li>
 
-          <li class="contacts__item">
-            <b class="contacts__text">Приезжайте в гости:</b>
-
-            <a class="contacts__link">ул. Большая Конюшенная, 19/8</a>
+          <li class="social__item">
+            <a href="#" class="social__btn social__btn--yb">Youtube</a>
           </li>
         </ul>
       </section>
+
+      <section class="developer">
+        <span class="developer__text">Разработано</span>
+
+        <figure class="developer__logo">
+          <img src="img/htmlacademy.svg" width="60" height="60" alt="Html Academy">
+        </figure>
+      </section>
     </footer>
 
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.7545783283194!2d30.32344483618726!3d59.93870623443853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x1c275a881519dab7!2z0JjQndCi0JXQoNCQ0JrQotCY0JLQndCr0JUg0J7QkdCj0KfQkNCu0KnQmNCVINCi0JXQpdCd0J7Qm9Ce0JPQmNCY!5e0!3m2!1sru!2sru!4v1473513598570" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <script src="js/script.js"></script>
   </body>
 </html>

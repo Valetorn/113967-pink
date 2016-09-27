@@ -1,18 +1,26 @@
 .review {
   padding: 0 20px;
+  background-image: url(/img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
 
   &__slide {
     display: none;
   }
   &__title {
-    margin-bottom: 20px;
     padding-top: 44px;
     line-height: 30px;
     text-align: center;
   }
-  p {
-    width: 290px;
-    margin-bottom: 42px;
+  &__autor-info {
+    margin: auto;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  &__slide-text {
+    width: 270px;
+    margin-top: 20px;
     line-height: 30px;
   }
   &__input {
@@ -20,7 +28,7 @@
   }
   &__slider-controls {
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     text-align: center;
     font-size: 0;
   }
@@ -40,12 +48,55 @@
 }
 #toggle-review1:checked ~ .review__slide1,
 #toggle-review2:checked ~ .review__slide2,
-#toggle-review3:checked ~ .review__slide3{
-  display: block;
+#toggle-review3:checked ~ .review__slide3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #toggle-review1:checked ~ .review__slider-controls label[for="toggle-review1"],
 #toggle-review2:checked ~ .review__slider-controls label[for="toggle-review2"],
-#toggle-review3:checked ~ .review__slider-controls label[for="toggle-review3"]{
+#toggle-review3:checked ~ .review__slider-controls label[for="toggle-review3"] {
   background-color: #ffffff;
   box-shadow: 0 0 0 3px #283645;
+}
+/* max-width: 659px */
+
+@media (max-width: 659px) {
+  .review {
+    &__autor-info--hidden {
+      display: none;
+    }
+  }
+}
+/* min-width: 660px */
+
+@media (min-width: 660px) {
+  .review {
+
+    &__slide {
+      margin: auto;
+      width: 620px;
+    }
+    &__title {
+      font-size: 20px;
+      color: white;
+      order: 2;
+    }
+    &__autor-info {
+      order: 3;
+    }
+    &__slide-text {
+      width: 100%;
+      font-size: 18px;
+      order: 1;
+    }
+    &__slider-controls {
+      margin-top: 38px;
+    }
+  }
+}
+/* min-width: 960px */
+
+@media (min-width: 960px) {
+
 }

@@ -1,3 +1,140 @@
 .price {
+  padding-top: 65px;
   background-color: @bg-color--grey;
+
+  &__title {
+    position: relative;
+    text-transform: uppercase;
+    background-color: @bg-color--dark-blue;
+    overflow: hidden;
+
+    &--hidden {
+      background-color: transparent;
+    }
+  }
+  h2 {
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #ffffff;
+  }
+  &__cost {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #8c949c;
+  }
+  &__hit {
+    position: absolute;
+    top: 5px;
+    left: -32px;
+    width: 104px;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 400;
+    background-color: #d22856;
+    transform: rotate(-45deg);
+  }
+  &__cell {
+    height: 45px;
+    padding-left: 22px;
+    padding-right: 10px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  &__ability--hidden {
+    display: none;
+  }
+  &__input {
+    display: none;
+  }
+  &__slider-controls {
+    display: none;
+  }
+  &__label {
+    display: inline-block;
+    vertical-align: middle;
+    width: 6px;
+    height: 6px;
+    background-color: #bec2c7;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+/* max-width: 659px */
+
+@media (max-width: 659px) {
+  .price {
+    overflow: hidden;
+
+    &__title {
+
+      &--hidden {
+        display: none;
+      }
+    }
+    h2 {
+      width: 280px;
+    }
+    &__cell {
+      &:first-child {
+        display: none;
+      }
+    }
+    &__cell-container {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__ability--hidden {
+      display: inherit;
+      text-transform: uppercase;
+    }
+    &__slider-controls {
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  #toggle-price1:checked ~ .price__slider-controls label[for="toggle-price1"],
+  #toggle-price2:checked ~ .price__slider-controls label[for="toggle-price2"],
+  #toggle-price3:checked ~ .price__slider-controls label[for="toggle-price3"]{
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px #283645;
+  }
+  #toggle-price2:checked ~ .price__table {
+    margin-left: -267px;
+  }
+  #toggle-price3:checked ~ .price__table {
+    margin-left: -533px;
+  }
+}
+/* min-width: 660px */
+
+@media (min-width: 660px) {
+  .price {
+    padding: 0 20px;
+
+    &__table {
+      margin-top: 35px;
+      margin-bottom: 70px;
+    }
+    h2 {
+      width: 150px;
+    }
+    &__cell {
+      width: 150px;
+      padding: 0;
+
+      &:first-child {
+        padding-left: 14px;
+        text-align: left;
+      }
+    }
+  }
 }

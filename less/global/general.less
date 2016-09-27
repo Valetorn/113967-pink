@@ -3,7 +3,7 @@ body {
   width: 320px;
   margin: 0 auto;
   padding: 0;
-  background-color: #ffffff;
+  background-color: @bg-color--grey;
 }
 h1 {
   .font(18px, 14px, #000000, 700);
@@ -29,8 +29,16 @@ img {
   height: auto;
 }
 /* min-width: 660px */
+
 @media (min-width: 660px) {
   body {
-    width: 700px;
+    width: 660px;
+  }
+}
+/* min-width: 960px */
+
+@media (min-width: 960px) {
+  body {
+    width: 960px;
   }
 }

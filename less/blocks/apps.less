@@ -2,6 +2,14 @@
   padding: 0 20px;
   background-color: @apps--bg-color;
 
+  &__text--hidden {
+    display: none;
+    font-size: 40px;
+    line-height: 50px;
+    color: #ffffff;
+    font-weight: 300;
+    opacity: 0.5;
+    }
   &__btn {
     display: inline-block;
     vertical-align: middle;
@@ -15,7 +23,7 @@
     color: #ffffff;
     text-decoration: none;
     border-radius: 50px;
-    box-shadow: 0 0 2px 2px #ffffff;
+    box-shadow: 0 0 0 2px #ffffff;
   }
   &__navigation {
     font-size: 0;
@@ -59,10 +67,31 @@
       background-image: url(/img/logo-microsoft.svg);
     }
   }
-  p {
+  &__text {
     color: #b4b7ba;
     padding-bottom: 20px;
   }
 }
+/* min-width: 660px */
 
+@media (min-width: 660px) {
+  .apps {
+    position: absolute;
+    left: 40px;
+    bottom: 50px;
+    width: 300px;
+    padding: 0;
+    background-color: transparent;
+    z-index: 2;
+
+    &__text--hidden {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
+    }
+    &__btn {
+      width: 100%;
+    }
+  }
+}
 
