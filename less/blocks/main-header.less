@@ -9,13 +9,9 @@
     background-position: 50% 100%;
   }
   &__preview {
+    width: 258px;
     height: 286px;
-    padding-top: 105px;
-
-    img {
-      width: 258px;
-      height: 286px;
-    }
+    padding-top: 107px;
   }
 }
 .main-menu {
@@ -25,8 +21,8 @@
     list-style: none;
 
     &--hidden {
-        display: none;
-      }
+      display: none;
+    }
   }
   &__btn {
     margin-right: 20px;
@@ -55,7 +51,7 @@
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
-    padding-bottom: 22px;
+    padding-bottom: 17px;
 
     &--active {
       border: none;
@@ -67,37 +63,108 @@
     vertical-align: top;
     text-align: center;
     width: 100%;
-    padding: 14px 0;
+    padding: 15px 0;
     font-size: 18px;
     line-height: 32px;
     color: #ffffff;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+
+    &:hover {
+      color: #d22856;
+    }
+    &:active {
+      color: #ffffff;
+      opacity: 0.5;
+    }
+    &--active {
+      &::after {
+        content: '';
+        display: block;
+        border-bottom: 2px solid #ffffff;
+        margin-top: 10px;
+      }
+      &:hover {
+        &::after {
+          border-bottom-color: #d22856;
+        }
+      }
+      &:active {
+        &::after {
+          border-bottom-color: #ffffff;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+/* max-width: 659px */
+
+@media (max-width: 659px) and (min-resolution: 144dpi),(max-width: 659px) and (min-resolution: 1.5dppx) {
+  .main-header {
+    &__container {
+      background-image: url(/img/bg-back-mobile@2x.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
+      background-size: 700px auto;
+    }
   }
 }
 /* min-width: 660px */
 
 @media (min-width: 660px) {
   .main-header {
+      &__container {
+      overflow: hidden;
+      background-image: url(/img/bg-back-tablet@1x.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
+    }
     &__preview {
-      position: relative;
-      margin-left: 190px;
-      padding-top: 85px;
-      z-index: 2;
+      width: 700px;
+      height: 545px;
+      margin-left: -20px;
+      padding-top: 75px;
     }
   }
   .main-menu {
-    &__navigation {
-      &--active {
-        padding-top: 44px;
-        padding-bottom: 42px;
-      }
+    &__top-block {
+      align-items: flex-end;
+      padding-top: 27px;
+      padding-bottom: 42px;
+    }
+  }
+}
+@media (min-width: 660px) and (min-resolution: 144dpi),(min-width: 660px) and (min-resolution: 1.5dppx) {
+  .main-header {
+    &__container {
+      background-image: url(/img/bg-back-tablet@2x.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
+      background-size: 1200px auto;
     }
   }
 }
 /* min-width: 960px */
 
 @media (min-width: 960px) {
+  .main-header {
+    &__container {
+      overflow: hidden;
+      background-image: url(/img/bg-back-desktop@1x.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
+      background-size: cover;
+
+    }
+    &__preview {
+      width: 1050px;
+      height: 645px;
+      padding-top: 99px;
+      margin-left: 26px;
+    }
+  }
   .main-menu {
     display: flex;
     flex-direction: row;
@@ -109,11 +176,13 @@
     &__top-block {
       width: 150px;
       flex-grow: 1;
+      padding-top: 27px;
     }
     &__navigation {
       display: flex;
       justify-content: space-between;
-      flex-grow: 2;
+      flex-grow: 1.5;
+      margin-top: 5px;
 
       &--hidden {
         display: inherit;
@@ -122,6 +191,7 @@
     &__link {
       padding: 0;
       line-height: 18px;
+      font-weight: 400;
       text-transform: none;
     }
     &__child {
@@ -132,6 +202,16 @@
       &--hidden {
         display: none;
       }
+    }
+  }
+}
+@media (min-width: 960px) and (min-resolution: 144dpi),(min-width: 960px) and (min-resolution: 1.5dppx) {
+  .main-header {
+    &__container {
+      background-image: url(/img/bg-back-desktop@2x.jpg);
+      background-repeat: no-repeat;
+      background-position: 50% 100%;
+      background-size: 2560px auto;
     }
   }
 }
