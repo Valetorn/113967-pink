@@ -1,45 +1,48 @@
 .price {
-  padding-top: 65px;
-  background-color: @bg-color--grey;
+  margin-bottom: 40px;
 
   &__title {
+    height: 94px;
     position: relative;
-    text-transform: uppercase;
     background-color: @bg-color--dark-blue;
     overflow: hidden;
+    z-index: 1;
 
     &--hidden {
       background-color: transparent;
     }
   }
   h2 {
-    margin-top: 14px;
-    font-size: 16px;
-    line-height: 30px;
-    color: #ffffff;
-  }
-  &__cost {
     font-size: 18px;
     line-height: 30px;
-    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  &__cost {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
     color: #8c949c;
+    text-transform: uppercase;
   }
   &__hit {
     position: absolute;
-    top: 5px;
-    left: -32px;
-    width: 104px;
+    top: 12px;
+    left: -45px;
+    width: 140px;
     height: 30px;
     line-height: 30px;
     color: #ffffff;
     font-weight: 400;
     background-color: #d22856;
     transform: rotate(-45deg);
+    text-transform: uppercase;
+    z-index: 2;
   }
   &__cell {
-    height: 45px;
+    height: 57px;
     padding-left: 22px;
-    padding-right: 10px;
+    padding-right: 23px;
     line-height: 30px;
     text-align: center;
     background-color: #ffffff;
@@ -63,7 +66,13 @@
     cursor: pointer;
 
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 16px;
+    }
+    &:hover {
+      background-color: #7e868f;
+    }
+    &:active {
+      opacity: 0.5;
     }
   }
 }
@@ -74,7 +83,6 @@
     overflow: hidden;
 
     &__title {
-
       &--hidden {
         display: none;
       }
@@ -96,8 +104,8 @@
       text-transform: uppercase;
     }
     &__slider-controls {
-      width: 100%;
-      display: inline-block;
+      display: block;
+      margin-top: 33px;
       text-align: center;
     }
   }
@@ -119,16 +127,27 @@
 @media (min-width: 660px) {
   .price {
     padding: 0 20px;
+    margin-bottom: 69px;
 
-    &__table {
-      margin-top: 35px;
-      margin-bottom: 70px;
+    &__title {
+      height: 75px;
+    }
+    &__hit {
+      top: 7px;
+      left: -50px;
+      height: 28px;
     }
     h2 {
       width: 150px;
+      padding-top: 8px;
+      font-size: 16px;
+    }
+    &__cost {
+      font-size: 18px;
     }
     &__cell {
       width: 150px;
+      height: 45px;
       padding: 0;
 
       &:first-child {

@@ -1,0 +1,35 @@
+.footer-logo {
+  &:hover {
+    path {
+      fill: #d22856;
+    }
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+/* min-width: 660px */
+
+@media (min-width: 660px) {
+  .footer-logo {
+    &__glass {
+      &--star {
+        display: none;
+      }
+    }
+  }
+}
+/* min-width: 960px */
+
+@media (min-width: 960px) {
+  .footer-logo {
+    &__glass {
+      &--star {
+        display: block;
+      }
+      &--no-star {
+        display: none;
+      }
+    }
+  }
+}
