@@ -4,7 +4,7 @@
   margin: 0 auto;
 
   &__container {
-    background-image: url(/img/bg-back-mobile@1x.jpg);
+    background-image: url(../img/bg-back-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: 50% 100%;
   }
@@ -14,77 +14,12 @@
     padding-top: 107px;
   }
 }
-.main-menu {
-  &__navigation {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    &--hidden {
-      display: none;
-    }
-  }
-  &__btn {
-    margin-right: 20px;
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-
-    &--active {
-      width: 50px;
-      height: 24px;
-      background-image: url(/img/icon-menu-burger.svg);
-    }
-    &--close {
-      width: 24px;
-      height: 23px;
-      background-image: url(/img/icon-menu-cross.svg);
-    }
-  }
-  &__item {
-    border-top: 1px solid #485461;
-  }
-  &__child {
-    background-color: rgba(30, 39, 51, 1);
-    border-bottom: 1px solid #000000;
-  }
-  &__top-block {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 17px;
-
-    &--active {
-      border: none;
-      background-color: rgba(30, 39, 51, 0.7);
-    }
-  }
-  &__link {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    width: 100%;
-    padding: 15px 0;
-    font-size: 18px;
-    line-height: 32px;
-    color: #ffffff;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    &:hover {
-      color: #d22856;
-    }
-    &:active {
-      opacity: 0.5;
-    }
-  }
-}
 /* max-width: 659px */
 
 @media (max-width: 659px) and (min-resolution: 144dpi),(max-width: 659px) and (min-resolution: 1.5dppx) {
   .main-header {
     &__container {
-      background-image: url(/img/bg-back-mobile@2x.jpg);
+      background-image: url(../img/bg-back-mobile@2x.jpg);
       background-repeat: no-repeat;
       background-position: 50% 100%;
       background-size: 700px auto;
@@ -97,7 +32,7 @@
   .main-header {
       &__container {
       overflow: hidden;
-      background-image: url(/img/bg-back-tablet@1x.jpg);
+      background-image: url(../img/bg-back-tablet@1x.jpg);
       background-repeat: no-repeat;
       background-position: 50% 100%;
     }
@@ -108,18 +43,11 @@
       padding-top: 75px;
     }
   }
-  .main-menu {
-    &__top-block {
-      align-items: flex-end;
-      padding-top: 27px;
-      padding-bottom: 42px;
-    }
-  }
 }
 @media (min-width: 660px) and (min-resolution: 144dpi),(min-width: 660px) and (min-resolution: 1.5dppx) {
   .main-header {
     &__container {
-      background-image: url(/img/bg-back-tablet@2x.jpg);
+      background-image: url(../img/bg-back-tablet@2x.jpg);
       background-repeat: no-repeat;
       background-position: 50% 100%;
       background-size: 1200px auto;
@@ -132,7 +60,7 @@
   .main-header {
     &__container {
       overflow: hidden;
-      background-image: url(/img/bg-back-desktop@1x.jpg);
+      background-image: url(../img/bg-back-desktop@1x.jpg);
       background-repeat: no-repeat;
       background-position: 50% 100%;
       background-size: cover;
@@ -145,77 +73,11 @@
       margin-left: 26px;
     }
   }
-  .main-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 10px;
-    background-color: rgba(30, 39, 51, 0.7);
-
-    &__top-block {
-      width: 150px;
-      flex-grow: 1;
-      padding-top: 27px;
-    }
-    &__navigation {
-      display: flex;
-      justify-content: space-between;
-      flex-grow: 1.5;
-      margin-top: 5px;
-
-      &--hidden {
-        display: inherit;
-      }
-    }
-    &__link {
-      padding: 0;
-      line-height: 18px;
-      font-weight: 400;
-      text-transform: none;
-
-      &:hover {
-      color: #d22856;
-    }
-      &:active {
-        color: #ffffff;
-        opacity: 0.5;
-      }
-      &--active {
-        &::after {
-          content: '';
-          display: block;
-          border-bottom: 2px solid #ffffff;
-          margin-top: 10px;
-        }
-        &:hover {
-          &::after {
-            border-bottom-color: #d22856;
-          }
-        }
-        &:active {
-          &::after {
-            border-bottom-color: #ffffff;
-            opacity: 0.5;
-          }
-        }
-      }
-    }
-    &__child {
-      background: none;
-      border: none;
-    }
-    &__btn {
-      &--hidden {
-        display: none;
-      }
-    }
-  }
 }
 @media (min-width: 960px) and (min-resolution: 144dpi),(min-width: 960px) and (min-resolution: 1.5dppx) {
   .main-header {
     &__container {
-      background-image: url(/img/bg-back-desktop@2x.jpg);
+      background-image: url(../img/bg-back-desktop@2x.jpg);
       background-repeat: no-repeat;
       background-position: 50% 100%;
       background-size: 2560px auto;

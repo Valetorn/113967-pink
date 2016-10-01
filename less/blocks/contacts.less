@@ -2,7 +2,7 @@
   position: relative;
   min-height: 447px;
   padding: 0 20px;
-  background-image: url(/img/bg-triangle-white-footer.svg);
+  background-image: url(../img/bg-triangle-white-footer.svg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -16,6 +16,7 @@
     font-weight: 300;
 
     &--bold {
+      display: block;
       font-size: 18px;
       color: #283645;
       font-weight: 700;
@@ -82,23 +83,29 @@
 
 @media (min-width: 960px) {
   .contacts {
+    min-height: 487px;
     padding: 0 10px;
 
     &__text {
       width: 480px;
-      padding-top: 26px;
-      margin-bottom: 50px;
+      padding-top: 65px;
+      margin-bottom: 55px;
       font-size: 50px;
+      line-height: 60px;
     }
     &__text-container {
       &:nth-child(1) {
+        margin-left: 25px;
         order: 1;
       }
       &:nth-child(2) {
+        margin-left: 40px;
         order: 3;
       }
       &:nth-child(3) {
         width: 240px;
+        margin: 0;
+        margin-left: 55px;
         order: 2;
       }
     }

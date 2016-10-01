@@ -161,14 +161,32 @@
 
 @media (min-width: 960px) {
   .price {
+    margin-bottom: 95px;
     padding: 0 10px;
 
+    &__title {
+      height: 94px;
+    }
     h2 {
-      width: 235px;
+      width: 231px;
+      padding-top: 0;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    &__cost {
+      font-size: 24px;
+      line-height: 30px;
     }
     &__cell {
-      width: 235px;
+      width: 231px;
+      height: 59px;
       padding-right: 0;
+      font-size: 18px;
+      line-height: 30px;
+
+      &:first-child {
+        padding-left: 20px;
+      }
     }
   }
 }

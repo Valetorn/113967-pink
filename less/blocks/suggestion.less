@@ -1,7 +1,7 @@
 .suggestion {
   min-height: 248px;
   padding-top: 40px;
-  background-image: url(/img/bg-triangle-white.svg);
+  background-image: url(../img/bg-triangle-white.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -37,6 +37,24 @@
       }
       &:last-child {
         padding-bottom: 50px;
+      }
+    }
+  }
+}
+/* min-width: 960px */
+
+@media (min-width: 960px) {
+  .suggestion {
+    min-height: 343px;
+    padding-top: 65px;
+
+    &__text {
+      font-size: 50px;
+      line-height: 60px;
+
+      &--bottom {
+        width: 430px;
+        margin-top: -25px;
       }
     }
   }
