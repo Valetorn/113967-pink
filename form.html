@@ -8,6 +8,8 @@
     <title>HTML Academy: Пинк (Форма)</title>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/picturefill.min.js" async></script>
   </head>
 
   <body class="form">
@@ -92,26 +94,26 @@
       <form action="#" method="post" class="main-form">
         <section class="main-form__name">
           <div class="main-form__input-container main-form__input-container--text">
-            <label for="last-name" class="main-form__label-title">Фамилия:</label>
+            <label for="last-name" class="main-form__label-title main-form__label-title--name">Фамилия:</label>
 
-            <input type="text" name="last-name" id="last-name" class="main-form__input-text" placeholder="Укажите фамилию">
+            <input type="text" name="last-name" id="last-name" class="main-form__input-text main-form__input-text--name" placeholder="Укажите фамилию">
           </div>
 
           <div class="main-form__input-container main-form__input-container--text">
-            <label for="first-name" class="main-form__label-title">Имя:</label>
+            <label for="first-name" class="main-form__label-title main-form__label-title--name main-form__label-title--name-second">Имя:</label>
 
-            <input type="text" name="first-name" id="first-name" class="main-form__input-text" placeholder="Введите ваше имя">
+            <input type="text" name="first-name" id="first-name" class="main-form__input-text main-form__input-text--name main-form__input-text--name-second" placeholder="Введите ваше имя">
           </div>
 
           <div class="main-form__input-container main-form__input-container--text">
-            <label for="second-name" class="main-form__label-title">Отчество:</label>
+            <label for="second-name" class="main-form__label-title main-form__label-title--name">Отчество:</label>
 
-            <input type="text" name="second-name" id="second-name" class="main-form__input-text" placeholder="Ну и отчество тоже">
+            <input type="text" name="second-name" id="second-name" class="main-form__input-text main-form__input-text--name" placeholder="Ну и отчество тоже">
           </div>
         </section>
 
         <section class="main-form__achievements">
-          <fieldset class="main-form__group">
+          <fieldset class="main-form__group main-form__group--achievements">
             <legend class="main-form__title main-form__achievements--title">Ваши безбашенные достижения в путешествии</legend>
 
             <div class="main-form__input-box main-form__checkbox-container">
@@ -153,23 +155,27 @@
         </section>
 
         <section class="main-form__contacts">
-          <fieldset class="main-form__group">
+          <fieldset class="main-form__group main-form__group--contacts">
             <legend class="main-form__title main-form__contacts--title">Контактная информация</legend>
 
-            <div class="main-form__input-container main-form__input-container--text">
-              <label for="phone-numbe" class="main-form__label-title main-form__contacts-label--phone1">Номерок телефончика</label>
+            <div class="main-form__input-container main-form__input-container--text main-form__input-container--contacts">
+              <label for="phone-numbe" class="main-form__label-title main-form__label-title--contacts main-form__contacts-label--phone1">Номерок телефончика</label>
 
-              <label for="phone-numbe" class="main-form__label-title main-form__contacts-label--phone2">Номер телефона</label>
+              <label for="phone-numbe" class="main-form__label-title main-form__label-title--contacts main-form__contacts-label--phone2">Номер телефона</label>
 
-              <input type="tel" name="phone-number" id="phone-numbe" class="main-form__input-text" placeholder="Номер, пожалуйста">
+              <input type="tel" name="phone-number" id="phone-numbe" class="main-form__input-text main-form__input-text--contacts" placeholder="Номер, пожалуйста">
+
+              <div class="main-form__input-icon main-form__input-icon--phone-icon"></div>
             </div>
 
-            <div class="main-form__input-container main-form__input-container--text">
-              <label for="e-mail" class="main-form__label-title main-form__contacts-label--adress1">Адресок почты</label>
+            <div class="main-form__input-container main-form__input-container--text main-form__input-container--contacts">
+              <label for="e-mail" class="main-form__label-title main-form__label-title--contacts main-form__contacts-label--adress1">Адресок почты</label>
 
-              <label for="e-mail" class="main-form__label-title main-form__contacts-label--adress2">Адрес почты</label>
+              <label for="e-mail" class="main-form__label-title main-form__label-title--contacts main-form__contacts-label--adress2">Адрес почты</label>
 
-              <input type="email" name="e-mail" id="e-mail" class="main-form__input-text" placeholder="Введите почту">
+              <input type="email" name="e-mail" id="e-mail" class="main-form__input-text main-form__input-text--contacts" placeholder="Введите почту">
+
+              <div class="main-form__input-icon main-form__input-icon--message"></div>
             </div>
           </fieldset>
         </section>
@@ -199,11 +205,11 @@
         </section>
 
         <section class="main-form__emotions">
-          <fieldset class="main-form__group">
+          <fieldset class="main-form__group main-form__group--emotions">
             <legend for="emotions" class="main-form__title main-form__emotions--title">Опишите свои эмоции</legend>
 
             <div class="main-form__input-container">
-              <textarea name="emotions" id="emotions" cols="20" rows="10" class="main-form__input-text main-form__input-comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea name="emotions" id="emotions" cols="10" rows="5" class="main-form__input-text main-form__input-comment" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </div>
           </fieldset>
         </section>
