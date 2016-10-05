@@ -176,28 +176,7 @@
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 30px;
-    color: #ffffff;
     font-weight: 700;
-    text-transform: uppercase;
-    background-color: #2aab6d;
-    border-radius: 5px;
-
-    &:hover {
-      background-color: #1c9b5e;
-    }
-    &:active {
-      color: rgba(255, 255, 255, 0.5);
-    }
-    &--disabled {
-      background-color: #e5e5e5;
-
-      &:hover {
-        background-color: #e5e5e5;
-      }
-      &:active {
-        background-color: #e5e5e5;
-      }
-    }
   }
   &__important {
     text-align: center;
@@ -326,10 +305,10 @@
     }
     &__input-icon {
       position: absolute;
-      width: 62px;
-      height: 62px;
-      top: 0;
-      right: 50px;
+      width: 58px;
+      height: 58px;
+      top: 2px;
+      right: 52px;
       background-color: #e5e5e5;
       background-repeat: no-repeat;
       background-position: 50% 50%;
@@ -380,6 +359,121 @@
       position: absolute;
       bottom: 50px;
       right: 18px;
+    }
+  }
+}
+/* min-width: 960px */
+
+@media (min-width: 960px) {
+  .main-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    padding: 0;
+
+    &__name {
+      margin-right: 68px;
+    }
+    &__input-text {
+      &--name {
+        width: 316px;
+      }
+      &--name-second {
+        width: 356px;
+      }
+      &--contacts {
+        width: 350px;
+      }
+    }
+    &__group {
+      padding-left: 75px;
+
+      &--contacts {
+        height: 160px;
+        padding-left: 58px;
+        padding-bottom: 0;
+        .clearfix();
+      }
+      &--achievements {
+        padding-left: 58px;
+        padding-bottom: 10px;
+      }
+      &--emotions {
+        height: 218px;
+        padding-left: 58px;
+        padding-bottom: 0;
+      }
+    }
+    &__input-container {
+      position: relative;
+
+      &--contacts {
+        float: left;
+
+        &:not(:last-child) {
+          margin-right: 72px;
+        }
+      }
+    }
+    &__checkbox-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__checkbox-container {
+      &:nth-child(1) {
+        order: -6;
+      }
+      &:nth-child(2) {
+        order: -3;
+      }
+      &:nth-child(3) {
+        order: -5;
+        margin-right: 7px;
+      }
+      &:nth-child(4) {
+        order: -2;
+        margin-left: 22px;
+      }
+      &:nth-child(5) {
+        order: -4;
+        margin-right: 45px;
+      }
+      &:nth-child(6) {
+        order: -1;
+        margin-right: 42px;
+      }
+    }
+    &__apps-travel {
+      width: 438px;
+      margin-top: -14px;
+      padding: 0;
+
+      &--title {
+        padding: 0 14px;
+      }
+    }
+    &__contacts {
+      width: 100%;
+
+      &--title {
+        margin-bottom: 30px;
+      }
+    }
+    &__input-icon {
+      right: 2px;
+    }
+    &__achievements {
+      width: 100%;
+    }
+    &__emotions {
+      width: 100%;
+      margin-bottom: 63px;
+    }
+    &__input-comment {
+      width: 795px;
+      height: 105px;
     }
   }
 }
