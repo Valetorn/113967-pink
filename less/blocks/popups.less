@@ -13,15 +13,12 @@
 }
 .popups {
   position: fixed;
-  top: 25%;
+  top: 20%;
   left: 15%;
   width: 320px;
   background-color: @bg-color--white;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 
-  &--hidden {
-    display: none;
-  }
   h1 {
     margin: 0 auto;
     margin-top: 43px;
@@ -44,7 +41,10 @@
 .popup-error {
   padding: 0 20px;
   padding-bottom: 52px;
-  box-sizing: border-box;
+
+  &--hidden {
+    display: none;
+  }
 }
 .popup-good {
   &__content {
@@ -64,6 +64,9 @@
   &__btn {
     margin-top: 50px;
   }
+  &--hidden {
+    display: none;
+  }
 }
 /* min-width: 660px */
 
@@ -81,39 +84,43 @@
       font-size: 18px;
     }
   }
-}
-.popup-good {
-  &__content {
-    padding: 0 80px;
+  .popup-good {
+    &__content {
+      padding: 0 80px;
 
-    p {
-      width: 320px;
+      p {
+        width: 320px;
 
-      br {
-        display: none;
+        br {
+          display: none;
+        }
       }
     }
+    &__btn-container {
+      padding: 0 80px;
+    }
   }
-  &__btn-container {
+  .popup-error {
     padding: 0 80px;
-  }
-}
-.popup-error {
-  padding: 0 80px;
-  padding-bottom: 52px;
+    padding-bottom: 52px;
+    box-sizing: border-box;
 
-  h1 {
-    width: 250px;
-  }
-  p {
-    width: 320px;
+    h1 {
+      width: 250px;
+    }
+    p {
+      width: 320px;
+    }
   }
 }
 /* min-width: 960px */
 
 @media (min-width: 960px) {
+  .popups {
+    left: 30%;
+  }
   .popup-good {
-    left: 15%;
+    left: 20%;
     width: 780px;
 
     h1 {

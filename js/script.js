@@ -62,11 +62,12 @@ form.addEventListener("submit", function(event) {
   if(!firstName.value || !secondName.value || !lastName.value) {
     event.preventDefault();
     popupWrap.classList.remove('popup-wrapper--hidden');
-    popupError.classList.remove('popups--hidden');
+    popupError.classList.remove('popup-error--hidden');
   } else {
     event.preventDefault();
+    popupError.classList.add('popup-error--hidden');
     popupWrap.classList.remove('popup-wrapper--hidden');
-    popupGood.classList.remove('popups--hidden');
+    popupGood.classList.remove('popup-good--hidden');
   }
 });
 
