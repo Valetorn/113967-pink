@@ -1,7 +1,7 @@
 .main-footer {
   display: flex;
   justify-content: space-around;
-  padding: 0 20px;
+  padding: 0 40px;
   padding-top: 38px;
   padding-bottom: 37px;
   background-color: @bg-color--white;
@@ -30,13 +30,20 @@
     align-items: center;
   }
 }
+/* min-width: 660px */
+
+@media (min-width: 660px) {
+  .main-footer {
+
+  }
+}
 /* min-width: 960px */
 
 @media (min-width: 960px) {
   .main-footer {
     justify-content: space-between;
-    padding: 0 10px;
-    padding-top: 75px;
+    padding: 0 130px;
+    padding-top: 74px;
     padding-bottom: 75px;
   }
 }

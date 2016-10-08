@@ -100,8 +100,9 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    width: auto;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 130px;
     background-color: rgba(30, 39, 51, 0.7);
 
     &__top-block {
@@ -112,7 +113,7 @@
     &__navigation {
       display: flex;
       justify-content: space-between;
-      flex-grow: 1.5;
+      flex-grow: 1.4;
       margin-top: 5px;
 
       &--hidden {
@@ -125,6 +126,9 @@
       font-weight: 400;
       text-transform: none;
 
+      &--upper {
+        text-transform: uppercase;
+      }
       &:hover {
       color: #d22856;
     }

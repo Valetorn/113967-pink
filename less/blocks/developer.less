@@ -35,12 +35,26 @@
   .developer {
     margin-left: 20px;
     margin-bottom: 5px;
+
     &__text {
       margin: 0;
     }
     &__logo {
       margin: 0;
       margin-left: 14px;
+    }
+  }
+}
+/* min-width: 960px */
+
+@media (min-width: 960px) {
+  .developer {
+    &__text {
+      font-size: 18px;
+      margin-left: -5px;
+    }
+    &__logo {
+      margin-left: 15px;
     }
   }
 }
