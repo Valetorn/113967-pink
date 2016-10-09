@@ -160,16 +160,16 @@
     }
   }
   &__emotions {
+    margin-bottom: 39px;
     padding-top: 23px;
 
     &--title {
-      margin-bottom: 18px;
+      margin-bottom: 17px;
     }
   }
   &__input-comment {
     width: 255px;
     height: 180px;
-    margin-bottom: 40px;
     padding-top: 15px;
   }
   &__btn {
@@ -232,7 +232,7 @@
 @media (min-width: 660px) {
   .main-form {
     margin-bottom: 13px;
-    padding: 0 10px;
+    padding: 0;
 
     &__name {
       order: -5;
@@ -241,7 +241,6 @@
     &__label-title {
       &--name {
         position: static;
-        margin-left: 10px;
         margin-right: 16px;
       }
       &--contacts {
@@ -251,10 +250,10 @@
     }
     &__input-text {
       &--name {
-        width: 500px;
+        width: 498px;
       }
       &--name-second {
-        width: 540px;
+        width: 539px;
       }
       &--contacts {
         width: 475px;
@@ -276,11 +275,14 @@
         padding-bottom: 47px;
       }
       &--emotions {
-        padding-bottom: 5px;
+        padding-bottom: 45px;
       }
     }
     &__input-container {
       &--contacts {
+        display: inline-block;
+        vertical-align: top;
+
         &:not(:last-child) {
           margin-bottom: 70px;
         }
@@ -289,7 +291,7 @@
     &__apps-travel {
       order: -4;
       margin-bottom: 58px;
-      padding: 0 8px;
+      padding: 0;
       background-color: inherit;
     }
     &__label-apps-travel {
@@ -300,7 +302,7 @@
     &__contacts {
       order: -3;
       margin-bottom: 57px;
-      padding: 0 8px;
+      padding: 0;
 
       &--title {
         margin-bottom: 32px;
@@ -320,7 +322,7 @@
       width: 58px;
       height: 58px;
       top: 2px;
-      right: 52px;
+      right: 2px;
       background-color: #e5e5e5;
       background-repeat: no-repeat;
       background-position: 50% 50%;
@@ -334,8 +336,9 @@
     }
     &__achievements {
       order: -2;
+      margin: 0;
       margin-bottom: 57px;
-      padding: 0 8px;
+      padding: 0;
       background-color: inherit;
 
       &--title {
@@ -352,7 +355,7 @@
     }
     &__emotions {
       margin-bottom: 65px;
-      padding: 0 8px;
+      padding: 0;
 
       &--title {
         padding: 0 35px;
@@ -364,13 +367,12 @@
       height: 172px;
     }
     &__btn {
-      margin-left: 10px;
       width: 300px;
     }
     &__important {
       position: absolute;
       bottom: 50px;
-      right: 18px;
+      right: 0;
     }
   }
 }
@@ -384,7 +386,7 @@
     padding: 0;
 
     &__name {
-      margin-right: 68px;
+      margin-right: 64px;
     }
     &__input-text {
       &--name {
@@ -454,7 +456,7 @@
       }
       &:nth-child(6) {
         order: -1;
-        margin-right: 42px;
+        margin-right: 40px;
       }
     }
     &__apps-travel {
@@ -463,7 +465,7 @@
       padding: 0;
 
       &--title {
-        padding: 0 14px;
+        padding: 0 11px;
       }
     }
     &__contacts {
