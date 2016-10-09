@@ -1,3 +1,78 @@
 .photo {
-  background-color: @bg-color--grey;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &--panorama {
+    width: 100%;
+  }
+  &__preview {
+    position: relative;
+    height: 180px;
+
+    &--panorama {
+      height: 137px;
+    }
+  }
+  &__marker {
+    position: absolute;
+    top: 0;
+    right: 6.3%;
+    padding: 6px 20px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #d22856;
+  }
+  &__content {
+    padding-left: 17px;
+    text-align: left;
+    background-color: @bg-color--grey;
+
+    h2 {
+      padding-top: 18px;
+    }
+    p {
+      text-align: left;
+      margin-bottom: 9px;
+    }
+  }
+  &__post-time {
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &__like {
+    padding-bottom: 20px;
+    font-size: 12px;
+    color: #d22856;
+    text-transform: uppercase;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 14px;
+      height: 12px;
+      margin-right: 19px;
+      background-image: url(../img/icon-heart.svg);
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+    }
+  }
+}
+/* min-width: 660px */
+
+@media (min-width: 660px) {
+  .photo {
+    width: 300px;
+
+    &__preview {
+    height: 300px;
+
+    &--panorama {
+      height: 509px;
+    }
+  }
+  }
 }

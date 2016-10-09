@@ -1,0 +1,63 @@
+.popup-good {
+  &__content {
+    padding: 0 20px;
+
+    p {
+      width: 270px;
+    }
+  }
+  &__btn-container {
+    width: 100%;
+    height: 163px;
+    padding: 0 20px;
+    background-color: @bg-color--grey;
+    box-sizing: border-box;
+  }
+  &__btn {
+    margin-top: 50px;
+  }
+  &--hidden {
+    display: none;
+  }
+}
+/* min-width: 660px */
+
+@media (min-width: 660px) {
+  .popup-good {
+    &__content {
+      padding: 0 80px;
+
+      p {
+        width: 320px;
+
+        br {
+          display: none;
+        }
+      }
+    }
+    &__btn-container {
+      padding: 0 80px;
+    }
+  }
+}
+/* min-width: 960px */
+
+@media (min-width: 960px) {
+  .popup-good {
+    left: 20%;
+    width: 780px;
+
+    h1 {
+      width: 440px;
+    }
+    p {
+      width: 395px;
+    }
+    &__content {
+      padding: 0 160px;
+    }
+    &__btn-container {
+      padding: 0 160px;
+    }
+  }
+}
