@@ -300,7 +300,7 @@
       </div>
 
       <form action="#" method="post" name="foto-form" class="post">
-        <div class="wrapper wrapper--photo">
+        <div class="wrapper wrapper--photo wrapper--post">
           <div class="post__content">
             <figure class="post__prewiev">
               <picture>
@@ -313,50 +313,52 @@
             </figure>
           </div>
 
-          <div class="post__tools">
-            <div class="post__tools-container">
-              <button type="button" name="btn-crop" class="post__btn-tools post__btn-tools--crop">Обрезать</button>
+          <div class="post__controls">
+            <div class="post__tools">
+              <div class="post__tools-container">
+                <button type="button" name="btn-crop" class="post__btn-tools post__btn-tools--crop">Обрезать</button>
 
-              <div class="post__scale post__scale--hidden">
+                <div class="post__scale post__scale--hidden">
+                  <div class="post__scale-toggle post__scale-toggle--crop"></div>
+                </div>
+              </div>
+
+              <div class="post__tools-container">
+                <button type="button" name="btn-fill" class="post__btn-tools post__btn-tools--fill">Заливка</button>
+
+                <div class="post__scale post__scale--hidden">
+                  <div class="post__scale-toggle post__scale-toggle--fill"></div>
+                </div>
+              </div>
+
+              <div class="post__tools-container">
+                <button type="button" name="btn-contrast" class="post__btn-tools post__btn-tools--contrast">Контраст</button>
+
+                <div class="post__scale post__scale--hidden">
+                  <div class="post__scale-toggle post__scale-toggle--contrast"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="post__scale-container">
+              <div class="post__scale post__scale--short">
                 <div class="post__scale-toggle post__scale-toggle--crop"></div>
               </div>
-            </div>
 
-            <div class="post__tools-container">
-              <button type="button" name="btn-fill" class="post__btn-tools post__btn-tools--fill">Заливка</button>
-
-              <div class="post__scale post__scale--hidden">
+              <div class="post__scale post__scale--hidden post__scale--short">
                 <div class="post__scale-toggle post__scale-toggle--fill"></div>
               </div>
-            </div>
 
-            <div class="post__tools-container">
-              <button type="button" name="btn-contrast" class="post__btn-tools post__btn-tools--contrast">Контраст</button>
-
-              <div class="post__scale post__scale--hidden">
+              <div class="post__scale post__scale--hidden post__scale--short">
                 <div class="post__scale-toggle post__scale-toggle--contrast"></div>
               </div>
             </div>
-          </div>
 
-          <div class="post__scale-container">
-            <div class="post__scale post__scale--short">
-              <div class="post__scale-toggle post__scale-toggle--crop"></div>
+            <div class="post__btn-container">
+              <button type="submit" name="post" class="post__btn post__btn--post">Запостить</button>
+
+              <button type="button" name="cancel" class="post__btn post__btn--cancel">Отмена</button>
             </div>
-
-            <div class="post__scale post__scale--hidden post__scale--short">
-              <div class="post__scale-toggle post__scale-toggle--fill"></div>
-            </div>
-
-            <div class="post__scale post__scale--hidden post__scale--short">
-              <div class="post__scale-toggle post__scale-toggle--contrast"></div>
-            </div>
-          </div>
-
-          <div class="post__btn-container">
-            <button type="submit" name="post" class="post__btn post__btn--post">Запостить</button>
-
-            <button type="button" name="cancel" class="post__btn post__btn--cancel">Отмена</button>
           </div>
         </div>
       </form>
