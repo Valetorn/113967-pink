@@ -9,10 +9,12 @@
   }
   &__input-container {
     position: relative;
-
     &--text {
+      display: flex;
+      flex-direction: column;
+
       &:not(:last-child) {
-        margin-bottom: 53px;
+        margin-bottom: 18px;
       }
     }
   }
@@ -34,9 +36,8 @@
     }
   }
   &__label-title {
-    position: absolute;
-    top: -36px;
-    left: 22px;
+    margin-left: 23px;
+    margin-bottom: 5px;
     line-height: 30px;
     color: #d22856;
     text-transform: uppercase;
@@ -114,7 +115,7 @@
     display: inline-block;
   }
   &__contacts {
-    padding-top: 65px;
+    padding-top: 30px;
     margin-bottom: 55px;
   }
   &__apps-travel {
@@ -240,20 +241,18 @@
     }
     &__label-title {
       &--name {
-        position: static;
-        margin-right: 16px;
+        margin: 0;
+        margin-right: 19px;
       }
       &--contacts {
-        top: 73px;
-        left: 20px;
+        margin: 0;
+        margin-top: 11px;
+        margin-left: 18px;
       }
     }
     &__input-text {
       &--name {
-        width: 498px;
-      }
-      &--name-second {
-        width: 539px;
+        flex-grow: 1;
       }
       &--contacts {
         width: 475px;
@@ -264,12 +263,13 @@
       padding: 0 25px;
     }
     &__group {
-      padding-left: 59px;
+      padding-left: 57px;
       padding-bottom: 56px;
       border: 2px solid #e5e5e5;
 
       &--contacts {
-        padding-bottom: 67px
+        padding-right: 60px;
+        padding-bottom: 25px
       }
       &--achievements {
         padding-bottom: 47px;
@@ -279,12 +279,20 @@
       }
     }
     &__input-container {
-      &--contacts {
-        display: inline-block;
-        vertical-align: top;
+      &--text {
+        flex-direction: row;
+        align-items: center;
 
         &:not(:last-child) {
-          margin-bottom: 70px;
+          margin-bottom: 53px;
+        }
+      }
+      &--contacts {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+
+        &:not(:last-child) {
+          margin-bottom: 30px;
         }
       }
     }
@@ -296,7 +304,7 @@
     }
     &__label-apps-travel {
       &::before {
-        margin-right: 24px;
+        margin-right: 22px;
       }
     }
     &__contacts {
@@ -386,14 +394,12 @@
     padding: 0;
 
     &__name {
-      margin-right: 64px;
+      flex-basis: 435px;
+      margin-right: 67px;
     }
     &__input-text {
       &--name {
-        width: 316px;
-      }
-      &--name-second {
-        width: 356px;
+        flex-grow: 1;
       }
       &--contacts {
         width: 350px;
@@ -404,9 +410,8 @@
 
       &--contacts {
         height: 160px;
-        padding-left: 58px;
-        padding-bottom: 0;
-        .clearfix();
+        padding-left: 56px;
+        padding-bottom: 3px;
       }
       &--achievements {
         padding-left: 58px;
@@ -422,12 +427,19 @@
       position: relative;
 
       &--contacts {
-        float: left;
+       flex-basis: 370px;
+        margin: 0;
 
         &:not(:last-child) {
+          margin: 0;
           margin-right: 72px;
         }
       }
+    }
+    &__input-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
     &__checkbox-wrapper {
       display: flex;
@@ -460,12 +472,19 @@
       }
     }
     &__apps-travel {
-      width: 438px;
+      flex-basis: 437px;
       margin-top: -14px;
+      margin-bottom: 52px;
       padding: 0;
 
       &--title {
+        margin-bottom: 45px;
         padding: 0 11px;
+      }
+    }
+    &__label-apps-travel {
+      &::before {
+        margin-right: 24px;
       }
     }
     &__contacts {
@@ -484,6 +503,10 @@
     &__emotions {
       width: 100%;
       margin-bottom: 63px;
+
+      &--title {
+        margin-bottom: 28px;
+      }
     }
     &__input-comment {
       width: 795px;

@@ -130,8 +130,8 @@
         text-transform: uppercase;
       }
       &:hover {
-      color: #d22856;
-    }
+        color: #d22856;
+      }
       &:active {
         color: #ffffff;
         opacity: 0.5;
@@ -140,17 +140,16 @@
         &::after {
           content: '';
           display: block;
-          border-bottom: 2px solid #ffffff;
-          margin-top: 10px;
+          box-shadow: 0 10px 0 1px #ffffff;
         }
         &:hover {
           &::after {
-            border-bottom-color: #d22856;
+            box-shadow: 0 10px 0 1px #d22856;
           }
         }
         &:active {
           &::after {
-            border-bottom-color: #ffffff;
+            box-shadow: 0 10px 0 1px #ffffff;
             opacity: 0.5;
           }
         }
