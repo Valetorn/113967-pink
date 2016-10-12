@@ -1,0 +1,43 @@
+.main-logo {
+  &--full {
+    display: none;
+  }
+  &:hover {
+    path {
+      fill: #c92955;
+    }
+  }
+  &:active {
+    path {
+      fill: #ffffff;
+      opacity: 0.3;
+    }
+  }
+}
+/* min-width: 660px */
+
+@media (min-width: 660px) {
+  .main-logo {
+    &--full {
+      display: block;
+    }
+    &--no-full {
+      display: none;
+    }
+    &__star {
+      display: none;
+    }
+  }
+}
+/* min-width: 960px */
+
+@media (min-width: 960px) {
+  .main-logo {
+    &__star {
+      display: block;
+    }
+    &__glass {
+      display: none;
+    }
+  }
+}

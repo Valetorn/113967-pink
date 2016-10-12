@@ -2,3 +2,26 @@ button {
   .outline();
   cursor: pointer;
 }
+.btn-green {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+  &:active {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  &--disabled {
+    background-color: #e5e5e5;
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+    &:active {
+      background-color: #e5e5e5;
+    }
+  }
+}

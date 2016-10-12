@@ -1,15 +1,44 @@
 .time {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-  background-color: #ffffff;
+  position: relative;
+  padding-bottom: 97px;
+  background-color: @bg-color--white;
+  z-index: 2;
 
  &__logo {
-    margin-top: 58px;
+    position: relative;
+    width: 238px;
+    height: 276px;
+    margin-top: 60px;
+  }
+  &__hour {
+    position: absolute;
+    top: 19.9%;
+    left: 7.6%;
+    width: 202px;
+    height: 202px;
+    text-align: center;
+    border-radius: 50%;
+    background-image: url(../img/icon-editor-diagram-fill.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+
+    &::before {
+      content: '24';
+      position: absolute;
+      top: 40%;
+      left: 22.8%;
+      display: inline-block;
+      font-size: 96px;
+      line-height: 30px;
+      font-weight: 700;
+      color: #d22856;
+
+    }
   }
   &__content {
     width: 310px;
-    margin-top: 100px;
+    margin-top: 97px;
     text-align: left;
   }
   &__title {
@@ -17,25 +46,22 @@
     font-size: 30px;
     line-height: 36px;
     color: #000000;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   &__text {
-    width: 290px;
-    margin-bottom: 21px;
+    width: 300px;
+    margin-bottom: 14px;
     text-align: left;
+
+    &--wrap2 {
+      display: none;
+    }
   }
   &__link {
     display: inline-block;
     vertical-align: top;
     line-height: 15px;
     color: #d22856;
-    text-decoration: none;
-
-    &::after {
-      content: '';
-      display: block;
-      border-bottom: 1px solid #e9aab7;
-    }
   }
 }
 /* max-width: 659px */
@@ -44,6 +70,67 @@
   .time {
     &--hidden {
       display: none;
+    }
+  }
+}
+/* min-width: 960px */
+
+@media (min-width: 960px) {
+  .time {
+    justify-content: flex-start;
+    padding: 0;
+    padding-bottom: 69px;
+    background-color: @bg-color--grey;
+
+    &__logo {
+      width: 298px;
+      height: 345px;
+      margin-top: 30px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__hour {
+    width: 253px;
+    height: 253px;
+
+    &::before {
+      top: 42%;
+      font-size: 120px;
+    }
+  }
+    &__content {
+      width: auto;
+      margin-top: 125px;
+      margin-left: 68px;
+    }
+    &__title {
+      width: 300px;
+      line-height: 30px;
+      margin-bottom: 25px;
+
+      br {
+        display: none;
+      }
+    }
+    &__text {
+      width: 530px;
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 30px;
+
+    &--wrap1 {
+        display: none;
+      }
+      &--wrap2 {
+        display: block;
+      }
+    }
+    &__link {
+      font-size: 18px;
+      line-height: 30px;
     }
   }
 }

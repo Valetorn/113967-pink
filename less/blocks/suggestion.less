@@ -1,19 +1,19 @@
 .suggestion {
-  background-image: url(/img/bg-triangle-white.svg);
+  min-height: 207px;
+  padding-top: 40px;
+  background-image: url(../img/bg-triangle-white.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
 
   &__text {
+    margin-bottom: 26px;
     font-size: 24px;
+    line-height: 30px;
     font-weight: 300;
 
-    &--top {
-      padding-top: 46px;
-      margin-bottom: 44px;
-    }
-    &--bottom {
-      padding-bottom: 50px;
+    &:last-child {
+      padding-bottom: 40px;
     }
   }
 }
@@ -21,21 +21,40 @@
 
 @media (min-width: 660px) {
   .suggestion {
+    min-height: 243px;
     padding: 0 20px;
+    padding-top: 48px;
     text-align: center;
 
     &__text {
       font-size: 40px;
+      line-height: 50px;
 
-      &--top {
-        padding-bottom: 0;
-      }
       &--bottom {
         width: 340px;
-        line-height: 45px;
         margin: 0 auto;
+        margin-top: -30px;
+      }
+      &:last-child {
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
+/* min-width: 960px */
+
+@media (min-width: 960px) {
+  .suggestion {
+    min-height: 343px;
+    padding-top: 65px;
+
+    &__text {
+      font-size: 50px;
+      line-height: 60px;
+
+      &--bottom {
+        width: 430px;
         margin-top: -25px;
-        padding-bottom: 80px;
       }
     }
   }

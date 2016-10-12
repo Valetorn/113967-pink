@@ -1,0 +1,40 @@
+.photo-body {
+  background-color: @bg-color--white;
+
+  .main-header {
+    &__container {
+      background-position: 50% 50px;
+    }
+  }
+  .main-footer {
+    padding-top: 23px;
+  }
+}
+/* min-width: 660px */
+
+@media (min-width: 660px) {
+  .photo-body {
+    .main-header {
+      &__container {
+        background-position: 50% 10px;
+      }
+    }
+    .main-footer {
+      padding-top: 36px;
+    }
+  }
+}
+/* min-width: 960px */
+
+@media (min-width: 960px) {
+  .photo-body {
+    .main-header {
+      &__container {
+        background-position: 50% 10px;
+      }
+    }
+    .main-footer {
+      padding-top: 97px;
+    }
+  }
+}
