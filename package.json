@@ -2,39 +2,47 @@
   "name": "113967-pink",
   "version": "0.1.0",
   "private": true,
-  "description": "Р›РёС‡РЅС‹Р№ РїСЂРѕРµРєС‚ В«РџРёРЅРєВ» РѕС‚В HTMLВ Academy",
-  "author": "Р’Р»Р°РґРёСЃР»Р°РІ Р”СѓСЂРёРЅ",
+  "description": "Личный проект «Пинк» от HTML Academy",
+  "author": "Владислав Дурин",
   "repository": {
-    "type": "git",
-    "url": "git@github.com:htmlacademy-adaptive/113967-pink.git"
+  "type": "git",
+  "url": "git@github.com:htmlacademy-adaptive/113967-pink.git"
   },
   "bugs": {
-    "url": "https://github.com/htmlacademy-adaptive/113967-pink/issues"
+  "url": "https://github.com/htmlacademy-adaptive/113967-pink/i.."
   },
   "homepage": "https://github.com/htmlacademy-adaptive/113967-pink",
   "devDependencies": {
-    "autoprefixer": "6.4.1",
-    "browser-sync": "2.15.0",
-    "gulp": "3.9.1",
-    "gulp-less": "3.1.0",
-    "gulp-plumber": "1.1.0",
-    "gulp-postcss": "6.2.0",
-    "@htmlacademy/editorconfig-cli": "0.0.7"
+  "@htmlacademy/editorconfig-cli": "0.0.7",
+  "autoprefixer": "6.4.1",
+  "browser-sync": "2.15.0",
+  "css-mqpacker": "^5.0.1",
+  "del": "^2.2.2",
+  "gulp": "3.9.1",
+  "gulp-csso": "^2.0.0",
+  "gulp-imagemin": "^3.0.3",
+  "gulp-plumber": "1.1.0",
+  "gulp-postcss": "6.2.0",
+  "gulp-rename": "^1.2.2",
+  "gulp-less": "^2.3.2",
+  "gulp-svgmin": "^1.2.3",
+  "gulp-svgstore": "^6.0.0",
+  "run-sequence": "^1.2.2"
   },
   "scripts": {
-    "test": "editorconfig-cli",
-    "build": "gulp style",
-    "start": "gulp serve"
+  "test": "editorconfig-tools check *",
+  "build": "gulp build",
+  "start": "gulp run build && gulp serve"
   },
   "editorconfig-cli": [
-    "*.html",
-    "*.json",
-    "*.js",
-    "js/**/*.js",
-    "img/**/*.svg",
-    "less/**/*.less"
+  "*.html",
+  "*.json",
+  "*.js",
+  "js/**/*.js",
+  "img/**/*.svg",
+  "less/**/*.less"
   ],
   "engines": {
-    "node": "6.5"
+  "node": "6.5"
   }
 }
