@@ -2,14 +2,14 @@
   "name": "113967-pink",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект «Пинк» от HTML Academy",
+  "description": "Личный проект «Пинк» от HTML Academy",
   "author": "Владислав Дурин",
   "repository": {
-  "type": "git",
-  "url": "git@github.com:htmlacademy-adaptive/113967-pink.git"
+    "type": "git",
+    "url": "git@github.com:htmlacademy-adaptive/113967-pink.git"
   },
   "bugs": {
-  "url": "https://github.com/htmlacademy-adaptive/113967-pink/i.."
+    "url": "https://github.com/htmlacademy-adaptive/113967-pink/issues"
   },
   "homepage": "https://github.com/htmlacademy-adaptive/113967-pink",
   "devDependencies": {
