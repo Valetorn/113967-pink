@@ -1,9 +1,4 @@
 .footer-logo {
-  &__glass {
-    &--star {
-      display: none;
-    }
-  }
   &:hover {
     path {
       fill: #d22856;
@@ -13,28 +8,29 @@
     opacity: 0.3;
   }
 }
+.footer-logo__glass {
+  &--star {
+    display: none;
+  }
+}
 /* min-width: 660px */
 
 @media (min-width: 660px) {
-  .footer-logo {
-    &__glass {
-      &--star {
-        display: none;
-      }
+  .footer-logo__glass {
+    &--star {
+      display: none;
     }
   }
 }
 /* min-width: 960px */
 
 @media (min-width: 960px) {
-  .footer-logo {
-    &__glass {
-      &--star {
-        display: block;
-      }
-      &--no-star {
-        display: none;
-      }
+  .footer-logo__glass {
+    &--star {
+      display: block;
+    }
+    &--no-star {
+      display: none;
     }
   }
 }

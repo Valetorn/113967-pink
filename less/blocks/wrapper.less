@@ -33,26 +33,6 @@
     width: 940px;
     padding: 0 10px;
 
-    &__sub-wrapper {
-      position: relative;
-      width: 940px;
-      margin: 0 auto;
-      padding: 0 10px;
-
-      &--review {
-        &::before {
-          content: '';
-          position: absolute;
-          top: 72px;
-          left: 46%;
-          width: 78px;
-          height: 63px;
-          background-image: url(../img/icon-quotes.svg);
-          background-repeat: no-repeat;
-          background-position: 100% 100%;
-        }
-      }
-    }
     &--time {
       justify-content: flex-start;
     }
@@ -61,6 +41,26 @@
       padding: 0;
       padding-left: 10px;
       box-sizing: border-box;
+    }
+  }
+  .wrapper__sub-wrapper {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    &--review {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 72px;
+        left: 46%;
+        width: 78px;
+        height: 63px;
+        background-image: url(../img/icon-quotes.svg);
+        background-repeat: no-repeat;
+        background-position: 100% 100%;
+      }
     }
   }
 }

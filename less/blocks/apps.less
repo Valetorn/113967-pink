@@ -1,85 +1,84 @@
 .apps {
   padding: 0 20px;
   background-color: @apps--bg-color;
+}
+.apps__btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 276px;
+  margin-top: 30px;
+  margin-bottom: 34px;
+  padding: 17px 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 0 0 2px #ffffff;
 
-  &__btn {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    width: 276px;
-    margin-top: 30px;
-    margin-bottom: 34px;
-    padding: 17px 0;
-    font-size: 18px;
-    line-height: 18px;
+  &:hover {
+    color: #d22856;
+    background-color: #ffffff;
+  }
+  &:active {
+    color: rgba(210, 40, 86, 0.5);
+  }
+}
+.apps__navigation {
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
+  padding-left: 37px;
+  font-size: 0;
+  list-style: none;
+}
+.apps__item {
+  display: inline-block;
+  vertical-align: bottom;
+
+  &:not(last-child) {
+    margin-right: 34px;
+  }
+}
+.apps__link {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+.apps__link {
+  &--ios {
+    width: 47px;
+    height: 56px;
+    background-image: url(../img/logo-apple.svg);
+  }
+}
+.apps__link {
+  &--android {
+    width: 43px;
+    height: 47px;
+    background-image: url(../img/logo-android.svg);
+  }
+}
+.apps__link {
+  &--win-phone {
+    width: 44px;
+    height: 41px;
+    background-image: url(../img/logo-microsoft.svg);
+  }
+}
+.apps__text {
+  padding-bottom: 30px;
+  color: #b4b7ba;
+  font-weight: 300;
+
+  &--hidden {
+    display: none;
+    font-size: 40px;
+    line-height: 50px;
     color: #ffffff;
-    font-weight: 700;
-    text-decoration: none;
-    border-radius: 50px;
-    box-shadow: 0 0 0 2px #ffffff;
-
-    &:hover {
-      color: #d22856;
-      background-color: #ffffff;
-    }
-    &:active {
-      color: rgba(210, 40, 86, 0.5);
-    }
-  }
-  &__navigation {
-    margin: 0;
-    margin-bottom: 22px;
-    padding: 0;
-    padding-left: 37px;
-    font-size: 0;
-    list-style: none;
-  }
-  &__item {
-    display: inline-block;
-    vertical-align: bottom;
-
-    &:not(last-child) {
-      margin-right: 34px;
-    }
-  }
-  &__link {
-    display: block;
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-  }
-  &__link {
-    &--ios {
-      width: 47px;
-      height: 56px;
-      background-image: url(../img/logo-apple.svg);
-    }
-  }
-  &__link {
-    &--android {
-      width: 43px;
-      height: 47px;
-      background-image: url(../img/logo-android.svg);
-    }
-  }
-  &__link {
-    &--win-phone {
-      width: 44px;
-      height: 41px;
-      background-image: url(../img/logo-microsoft.svg);
-    }
-  }
-  &__text {
-    padding-bottom: 30px;
-    color: #b4b7ba;
     font-weight: 300;
-
-    &--hidden {
-      display: none;
-      font-size: 40px;
-      line-height: 50px;
-      color: #ffffff;
-      font-weight: 300;
-    }
   }
 }
 /* min-width: 660px */
@@ -93,29 +92,28 @@
     min-height: 490px;
     padding: 0;
     background-color: transparent;
+  }
+  .apps__text {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
 
-    &__text {
-      font-size: 18px;
-      color: #ffffff;
-      font-weight: 300;
-
-      &--hidden {
-        display: block;
-        width: 200px;
-        margin: 0 auto;
-      }
+    &--hidden {
+      display: block;
+      width: 200px;
+      margin: 0 auto;
     }
-    &__btn {
-      width: 100%;
-      margin-top: 28px;
-      margin-bottom: 48px;
-    }
-    &__navigation {
-      padding-left: 45px;
-    }
-    &__link {
-      margin-bottom: 14px;
-    }
+  }
+  .apps__btn {
+    width: 100%;
+    margin-top: 28px;
+    margin-bottom: 48px;
+  }
+  .apps__navigation {
+    padding-left: 45px;
+  }
+  .apps__link {
+    margin-bottom: 14px;
   }
 }
 /* min-width: 960px */
@@ -129,22 +127,20 @@
     min-height: 550px;
     padding: 0;
     background-color: transparent;
-
-    &__text {
-
-      &--hidden {
-        width: 245px;
-        font-size: 50px;
-        line-height: 60px;
-        margin-bottom: 24px;
-      }
+  }
+  .apps__text {
+    &--hidden {
+      width: 245px;
+      font-size: 50px;
+      line-height: 60px;
+      margin-bottom: 24px;
     }
-    &__btn {
-      font-size: 21px;
-      margin-bottom: 69px;
-    }
-    &__link {
-      margin-bottom: 33px;
-    }
+  }
+  .apps__btn {
+    font-size: 21px;
+    margin-bottom: 69px;
+  }
+  .apps__link {
+    margin-bottom: 33px;
   }
 }
