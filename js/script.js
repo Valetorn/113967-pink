@@ -1,3 +1,4 @@
+"use strict";
 /* main-menu */
 
 var topBlock = document.querySelector('.main-menu__top-block');
